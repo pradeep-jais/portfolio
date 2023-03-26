@@ -18,7 +18,7 @@ closeBtn.addEventListener('click', () => {
 // Display icon name hint on hover
 const hintText = get('.hint-text');
 const socialLinks = [...document.querySelectorAll('.social-icons')];
-const hero = get('.hero');
+// const hero = get('.hero');
 
 socialLinks.forEach((socialLink) => {
   socialLink.addEventListener('mouseover', (e) => {
@@ -32,7 +32,6 @@ socialLinks.forEach((socialLink) => {
       hintText.style.top = `${top}px`;
       hintText.classList.add('show');
       hintText.textContent = iconName;
-      console.log(hintText);
     }
   });
 });
@@ -42,7 +41,7 @@ sidebar.addEventListener('mouseover', (e) => {
     hintText.classList.remove('show');
   }
 });
-hero.addEventListener('mouseover', (e) => {
+document.body.addEventListener('mouseover', (e) => {
   if (!e.target.parentElement.classList.contains('social-icon')) {
     hintText.classList.remove('show');
   }
