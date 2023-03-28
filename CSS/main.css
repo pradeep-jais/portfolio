@@ -239,6 +239,7 @@ alerts
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
+  height: 100%;
 }
 .logo {
   display: flex;
@@ -253,6 +254,7 @@ alerts
 }
 .logo-text {
   font-size: 2rem;
+  color: var(--clr-primary-1);
   margin: 0;
   padding-left: 1rem;
   font-family: cursive;
