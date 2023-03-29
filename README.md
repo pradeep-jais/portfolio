@@ -48,12 +48,11 @@ DOM basic
 - pagination
 - Comfy store
 
-6. Portfolio
-7. Contact
+6. Contact
 
--- Feature to add --
+-- Features to add --
 
-- Responsive
+- Responsive Design
 - smooth navigation
 - Multiple color theme(Dark Mode)
 - Animations on interaction(future plan)
