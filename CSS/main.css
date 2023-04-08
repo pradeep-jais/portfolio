@@ -721,6 +721,7 @@ alerts
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 1rem;
   margin-bottom: 5rem;
 }
 .projects-container {

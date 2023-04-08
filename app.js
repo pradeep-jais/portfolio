@@ -17,7 +17,7 @@ const displayProjects = (projects) => {
   // Featured Projects
   const featuredList = projects.map((project) => {
     // destructuring
-    const { title, image, featured, techUsed, url, id } = project;
+    const { title, image, featured, techUsed, github, url, id } = project;
 
     if (featured) {
       const techStack = techUsed
@@ -41,7 +41,7 @@ const displayProjects = (projects) => {
               <div class="tech-stack">${techStack}</div>
               </div>
               <footer class="project-btn-container">
-                <a href="#repo-link" target="_blank" class="btn btn-hipster"
+                <a href="${github}" target="_blank" class="btn btn-hipster"
                   >view repo</a
                 >
                 <a href="${url}" target="_blank" class="btn btn-hipster"
