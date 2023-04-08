@@ -113,7 +113,7 @@ const projects = [
     title: 'pagination',
     techUsed: ['HTML', 'CSS', 'JavaScript'],
     desc: 'A large number of products jammed on single page may discourage user experience. For this we can use pagination feature to displat a limited amount of product on single page and pages can be change on some button clicks ',
-    url: 'https://css-cards-style.netlify.app/',
+    url: 'https://pagination-apis.netlify.app/',
     image: '../projects-img/pagination.jpg',
   },
   {
@@ -126,3 +126,5 @@ const projects = [
     image: '../projects-img/calci.jpg',
   },
 ];
+
+export { projects };
