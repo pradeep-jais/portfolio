@@ -273,15 +273,16 @@
         <h1>projects</h1>
         <div class="underline"></div>
       </div>
-      <div class="view-code">
-        <h5>Find all my projects code on Github :</h5>
-        <a href="https://github.com/pradeep-jais" class="btn view-code-btn"
-          >Github</a
-        >
-      </div>
+
       <div class="projects-center section-center">
-        <h3>Featured projects</h3>
-        <div class="featured-projects">
+        <div class="projects-code">
+          <h4>Find all my projects code on Github :</h4>
+          <a href="https://github.com/pradeep-jais" class="btn view-code-btn"
+            >Github</a
+          >
+        </div>
+        <h2>Featured projects</h2>
+        <div class="featured-projects projects-container">
           <!-- single project  -->
           <article class="project">
             <a href="./HTML/projects.html">
@@ -291,21 +292,24 @@
                 alt="backroad"
               />
             </a>
-            <h4>project name</h4>
-            <h5>tech stack : <span class="tech-stack"></span></h5>
-            <footer>
-              <a href="#repo-link" target="_blank" class="btn btn-hipster"
-                >view repo</a
-              >
-              <a href="#project-link" target="_blank" class="btn btn-hipster"
-                >view project</a
-              >
-            </footer>
+            <div class="project-info">
+              <h4>project name</h4>
+              <h5>tech stack : <span class="tech-stack"></span></h5>
+              <footer class="project-btn-container">
+                <a href="#repo-link" target="_blank" class="btn btn-hipster"
+                  >view repo</a
+                >
+                <a href="#project-link" target="_blank" class="btn btn-hipster"
+                  >view project</a
+                >
+              </footer>
+            </div>
           </article>
           <!-- end of single project  -->
         </div>
-        <h3>Basic Projects</h3>
-        <div class="basic-projects"></div>
+        <h2>Basic Projects</h2>
+        <div class="basic-projects projects-container"></div>
+        <a href="./HTML/projects.html" class="btn projects-btn">all Projects</a>
       </div>
     </section>
     <!-- end of projects  -->
