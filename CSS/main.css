@@ -834,6 +834,10 @@ contact
 .footer-link {
   color: var(--clr-white);
   font-size: 1.25rem;
+  transition: var(--transition);
+}
+.footer-link:hover {
+  color: var(--clr-primary-5);
 }
 .footer-icons .social-icon {
   color: var(--clr-primary-4);

@@ -321,11 +321,16 @@
         <article class="contact-form">
           <h4>Get in touch</h4>
           <p>In case you want me to work for your project</p>
-          <form class="form">
+          <form
+            action="https://formspree.io/f/mjvdpgly"
+            method="post"
+            class="form"
+          >
             <div class="form-row">
               <label for="name" class="form-label">name</label>
               <input
                 type="text"
+                name="name"
                 id="name"
                 class="form-input"
                 placeholder="your name"
@@ -336,13 +341,18 @@
               <label for="email" class="form-label">email</label>
               <input
                 type="email"
+                name="email"
                 placeholder="your mail"
                 id="email"
                 class="form-input"
               />
             </div>
             <div class="form-row">
-              <textarea class="form-textarea">Description</textarea>
+              <textarea
+                name="message"
+                class="form-textarea"
+                placeholder="message..."
+              ></textarea>
             </div>
             <button type="submit" class="btn btn-block">submit</button>
           </form>
