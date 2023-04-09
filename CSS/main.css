@@ -836,10 +836,10 @@ contact
   font-size: 1.25rem;
 }
 .footer-icons .social-icon {
-  color: var(--clr-primary-9);
+  color: var(--clr-primary-4);
 }
 .footer-icons .social-icon:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-10);
 }
 .footer-text {
   text-transform: capitalize;
