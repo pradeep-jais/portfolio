@@ -19,7 +19,7 @@ const displayProjects = (projects) => {
         .join('');
       return `
           <article class="project" data-id="${id}">
-            <a href="./HTML/projects.html">
+            <a href="./HTML/project.html?id=${id}">
               <img
                 src="${image}"
                 class="img project-img"
@@ -60,7 +60,7 @@ const displayProjects = (projects) => {
         .join('');
       return `
           <article class="project" data-id ="${id}">
-            <a href="./HTML/projects.html">
+            <a href="./HTML/project.html?id=${id}">
               <img
                 src="${image}"
                 class="img project-img"
