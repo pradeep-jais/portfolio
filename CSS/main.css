@@ -742,7 +742,7 @@ alerts
 }
 /*
 ##############
- contact 
+contact 
 ##############
  */
 .contact {
@@ -811,4 +811,37 @@ alerts
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
+}
+
+/*
+##############
+ footer 
+##############
+ */
+.footer {
+  background: var(--clr-primary-1);
+  display: grid;
+  place-content: center;
+  padding: 3rem 0;
+}
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+}
+.footer-link {
+  color: var(--clr-white);
+  font-size: 1.25rem;
+}
+.footer-icons .social-icon {
+  color: var(--clr-primary-9);
+}
+.footer-icons .social-icon:hover {
+  color: var(--clr-primary-5);
+}
+.footer-text {
+  text-transform: capitalize;
+  color: var(--clr-white);
 }
