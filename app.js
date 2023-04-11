@@ -8,4 +8,5 @@ navToggle();
 
 hintTextOnIconHover();
 
-displayProjects(projects);
+// true value indicating about the projects are displayed on home page. According to that relative image path is adjusted
+displayProjects(projects, true);

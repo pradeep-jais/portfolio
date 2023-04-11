@@ -19,6 +19,9 @@ const displaySingleProject = () => {
   const project = projects.reduce((acc, project) => {
     if (project.id == id) {
       const { id, title, techUsed, image, github, url, desc } = project;
+
+      // Dynamic page title
+      document.title = `Pradeep Jais | ${title}`;
       const techStack = techUsed
         .map((tech) => {
           return `<p>${tech}</p>`;
