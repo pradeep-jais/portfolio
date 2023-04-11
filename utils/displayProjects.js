@@ -4,12 +4,21 @@ const featuredProjectDOM = getElement('.featured-projects');
 const basicProjectDOM = getElement('.basic-projects');
 
 // Populating projects on DOM
-const displayProjects = (projects) => {
+const displayProjects = (projects, flag) => {
   console.log(projects);
   // Featured Projects
   const featuredList = projects.map((project) => {
     // destructuring
     const { title, image, featured, techUsed, github, url, id } = project;
+
+    // Github page not displaying the image, bug fixed
+    let newImage;
+    if (flag) {
+      newImage = image.slice(1);
+    } else {
+      newImage = image;
+    }
+    console.log(newImage);
 
     if (featured) {
       const techStack = techUsed
@@ -21,7 +30,7 @@ const displayProjects = (projects) => {
           <article class="project" data-id="${id}">
             <a href="./HTML/project.html?id=${id}">
               <img
-                src="${image}"
+                src="${newImage}"
                 class="img project-img"
                 alt="${title}"
               />
@@ -62,7 +71,7 @@ const displayProjects = (projects) => {
           <article class="project" data-id ="${id}">
             <a href="./HTML/project.html?id=${id}">
               <img
-                src="${image}"
+                src="${newImage}"
                 class="img project-img"
                 alt="${title}"
               />

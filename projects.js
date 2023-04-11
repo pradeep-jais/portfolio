@@ -7,4 +7,4 @@ navToggle();
 
 hintTextOnIconHover();
 
-displayProjects(projects);
+displayProjects(projects, false);
