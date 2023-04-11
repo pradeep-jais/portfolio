@@ -5,20 +5,19 @@ const basicProjectDOM = getElement('.basic-projects');
 
 // Populating projects on DOM
 const displayProjects = (projects, flag) => {
-  console.log(projects);
+  let newImage;
   // Featured Projects
   const featuredList = projects.map((project) => {
     // destructuring
     const { title, image, featured, techUsed, github, url, id } = project;
 
     // Github page not displaying the image, bug fixed
-    let newImage;
+
     if (flag) {
       newImage = image.slice(1);
     } else {
       newImage = image;
     }
-    console.log(newImage);
 
     if (featured) {
       const techStack = techUsed
@@ -60,7 +59,12 @@ const displayProjects = (projects, flag) => {
   const basicProjectList = projects.map((project) => {
     // destructuring
     const { title, image, featured, techUsed, url, id } = project;
-
+    // Github page not displaying the image, bug fixed
+    if (flag) {
+      newImage = image.slice(1);
+    } else {
+      newImage = image;
+    }
     if (!featured) {
       const techStack = techUsed
         .map((tech) => {
