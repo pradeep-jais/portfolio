@@ -6,6 +6,7 @@ const basicProjectDOM = getElement('.basic-projects');
 // Populating projects on DOM
 const displayProjects = (projects, flag) => {
   let newImage;
+  let singleProject;
   // Featured Projects
   const featuredList = projects.map((project) => {
     // destructuring
@@ -15,8 +16,10 @@ const displayProjects = (projects, flag) => {
 
     if (flag) {
       newImage = image.slice(1);
+      singleProject = './HTML/project.html';
     } else {
       newImage = image;
+      singleProject = './project.html';
     }
 
     if (featured) {
@@ -27,7 +30,7 @@ const displayProjects = (projects, flag) => {
         .join('');
       return `
           <article class="project" data-id="${id}">
-            <a href="./HTML/project.html?id=${id}">
+            <a href="${singleProject}?id=${id}">
               <img
                 src="${newImage}"
                 class="img project-img"
@@ -73,7 +76,7 @@ const displayProjects = (projects, flag) => {
         .join('');
       return `
           <article class="project" data-id ="${id}">
-            <a href="./HTML/project.html?id=${id}">
+            <a href="${singleProject}?id=${id}">
               <img
                 src="${newImage}"
                 class="img project-img"
