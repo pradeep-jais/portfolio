@@ -812,7 +812,36 @@ contact
     align-items: center;
   }
 }
-
+/*
+##############
+ single Project
+##############
+ */
+.single-project {
+  background: var(--clr-primary-10);
+}
+.single-project-info {
+  margin-top: 1rem;
+}
+.single-project-container {
+  padding: 0 1rem 4rem 1rem;
+}
+.single-project img {
+  height: 16rem;
+}
+@media screen and (min-width: 768px) {
+  .single-project-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem 4rem 2rem;
+  }
+  .single-project img {
+    height: auto;
+  }
+}
 /*
 ##############
  footer 

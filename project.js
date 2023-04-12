@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   hintTextOnIconHover();
 });
 
-const projectContainer = getElement('.project-center');
+const projectContainer = getElement('.single-project-center');
 
 const displaySingleProject = () => {
   // getting id from url
@@ -22,25 +22,27 @@ const displaySingleProject = () => {
 
       // Dynamic page title
       document.title = `Pradeep Jais | ${title}`;
+
       const techStack = techUsed
         .map((tech) => {
           return `<p>${tech}</p>`;
         })
         .join('');
-      acc = `<article class="single-project" data-id="${id}">
+      acc = `<article class="single-project-container" data-id="${id}">
           <img
             src="${image}"
             class="img project-img"
             alt="${title}"
           />
 
-          <div class="project-info">
+          <div class="single-project-info">
             <h4>${title}</h4>
             <div class="stack">
               <p>tech stack :</p>
               <div class="tech-stack">${techStack}</div>
-              <p>${desc}</p>
+              
             </div>
+            <p class="desc">${desc}</p>
             <footer class="project-btn-container">
               <a href="${
                 github ? github : '#'
@@ -58,7 +60,6 @@ const displaySingleProject = () => {
       return acc;
     }
   }, '');
-  console.log(project);
 };
 
 displaySingleProject();
