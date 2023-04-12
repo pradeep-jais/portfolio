@@ -36,7 +36,7 @@ const displaySingleProject = () => {
           />
 
           <div class="single-project-info">
-            <h4>${title}</h4>
+            <h2>${title}</h2>
             <div class="stack">
               <p>tech stack :</p>
               <div class="tech-stack">${techStack}</div>
