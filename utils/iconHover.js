@@ -1,5 +1,11 @@
 import get from './getElement.js';
 
+// Footer date update
+const dateDOM = get('.date');
+const date = new Date();
+
+dateDOM.textContent = date.getFullYear();
+
 // Display icon name hint on hover
 
 const hintTextOnIconHover = () => {
