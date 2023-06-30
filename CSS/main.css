@@ -673,6 +673,7 @@ alerts
   padding: 1rem;
 }
 .project {
+  align-self: start;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-light);
   transition: var(--transition);
@@ -736,15 +737,30 @@ alerts
   gap: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .projects-container {
+  .projects-container:not(.basic-projects) {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 992px) {
-  .projects-container {
+  .projects-container:not(.basic-projects) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+/* Making basic projects section slider */
+.scroll-wrapper {
+  overflow: hidden;
+}
+.basic-projects {
+  display: flex;
+  /* overflow-x: auto; */
+}
+.basic-projects .project-img {
+  min-width: 23rem;
+}
+.projects-page {
+  padding-bottom: 3rem;
+}
+
 /*
 ##############
 contact 
