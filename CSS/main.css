@@ -683,8 +683,9 @@ alerts
 }
 .project-info {
   padding: 0.5rem 1rem 1rem 1rem;
-  background: var(--clr-primary-10);
-  border-radius: var(--border-radius);
+  background: var(--clr-white);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
 .project-img {
   height: 15rem;
@@ -711,10 +712,11 @@ alerts
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   color: var(--clr-primary-5);
 }
 .tech-stack p {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 .project-btn-container {
   display: flex;

@@ -47,7 +47,7 @@ const projects = [
   },
   {
     id: 6,
-    featured: true,
+    featured: false,
     title: `John's portfolio`,
     techUsed: ['HTML', 'CSS'],
     desc: 'A full working demo portfolio website with multiple pages like about, projects, contact with a basic form. It is made fully responsive with latest CSS features. Some JavaScript for basic functionality like smooth scroll, nav-toggle, footer date etc. It has interesting skills and blog section and also a video embedded.',
@@ -76,7 +76,7 @@ const projects = [
   {
     id: 9,
     featured: true,
-    title: 'Gallery',
+    title: 'Image Gallery',
     techUsed: ['HTML', 'CSS', 'JavaScript'],
     desc: 'This is a nice photo gallery project which uses Object Oriented Programmimg(OOP) approach based on constructor function along with prototypal inheritence modal. The code can be refactored with JavaScript Class object which is basically syntactic sugar.',
     github: 'https://github.com/pradeep-jais/Gallery',
@@ -140,6 +140,26 @@ const projects = [
     github: 'https://github.com/pradeep-jais/E-Com-Comfy-Store',
     url: 'https://e-com-comfy-store.netlify.app/',
     image: '../projects/e-com-comfy-store.jpeg',
+  },
+  {
+    id: 16,
+    featured: true,
+    title: 'Carousel in ReactJS',
+    techUsed: ['CSS', 'JavaScript', 'ReactJS'],
+    desc: `Implementing simple carousel(image slider) functionality in React JS with functions like next image, previous image, auto update image after a few second and go to any images`,
+    github: 'https://github.com/pradeep-jais/react-carousel',
+    url: 'https://react-carousel-js.netlify.app/',
+    image: '../projects/carousel-react.jpeg',
+  },
+  {
+    id: 17,
+    featured: true,
+    title: 'Cart using Redux toolkit',
+    techUsed: ['CSS', 'JavaScript', 'ReactJS'],
+    desc: `A simple shopping cart with basic features like increase/decrease product amount, remove product, update price and total cart item. The project is build in latest ReactJS 18 with Redux toolkit library for centralized state management. `,
+    github: 'https://github.com/pradeep-jais/react-redux-cart-project',
+    url: 'https://react-reduxtool-cart.netlify.app/',
+    image: '../projects/redux-cart.jpeg',
   },
 ];
 
