@@ -722,6 +722,9 @@ alerts
   display: flex;
   justify-content: space-between;
 }
+.project-btn-container-flag {
+  justify-content: center;
+}
 .project-btn-container a {
   font-size: 0.85rem;
   padding: 0.15rem 0.375rem;
