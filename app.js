@@ -5,6 +5,8 @@ import hintTextOnIconHover from './utils/iconHover.js';
 import displayProjects from './utils/displayProjects.js';
 import './utils/scrollCards.js';
 
+import './commonFeature.js';
+
 navToggle();
 
 hintTextOnIconHover();
