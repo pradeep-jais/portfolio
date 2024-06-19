@@ -267,9 +267,19 @@ alerts
 
 /* dark theme */
 .theme {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   position: absolute;
   top: 6rem;
   right: 1rem;
+  outline: 2px solid var(--clr-primary-2);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+}
+.theme-text {
+  text-transform: capitalize;
+  color: var(--clr-primary-2);
 }
 .theme-color {
   display: inline-block;
