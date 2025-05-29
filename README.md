@@ -56,3 +56,11 @@ DOM basic
 - smooth navigation
 - Multiple color theme(Dark Mode)
 - Animations on interaction(future plan)
+
+### Updates 2.0
+
+1. Update skill section
+2. Update about
+3. Update projects
+4. Update theme, Keep colors in standard design ratio
+5. hint text animation
