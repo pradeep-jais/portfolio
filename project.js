@@ -1,12 +1,6 @@
 import getElement from './utils/getElement.js';
 import { projects } from './utils/projectData.js';
-import hintTextOnIconHover from './utils/iconHover.js';
-import navToggle from './utils/navToggle.js';
-
-window.addEventListener('DOMContentLoaded', () => {
-  navToggle();
-  hintTextOnIconHover();
-});
+import './commonFeature.js';
 
 const projectContainer = getElement('.single-project-center');
 
