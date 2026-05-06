@@ -1,0 +1,101 @@
+/* sidebar */
+.sidebar {
+  position: fixed;
+  inset: 0;
+  text-align: center;
+  background: var(--clr-primary-10);
+  transform: translateY(-100%);
+  transition: var(--transition);
+  z-index: 100;
+  /* overflow: hidden; */
+}
+.sidebar.show {
+  transform: translateY(0);
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  border: transparent;
+  background: transparent;
+  color: var(--red-light);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.close-btn:hover {
+  color: var(--red-dark);
+  transform: scale(1.1);
+}
+.sidebar-links {
+  font-family: var(--heading-font-2);
+  margin-top: 6rem;
+}
+.sidebar-links a {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+  display: block;
+  color: var(--clr-primary-1);
+  padding: 0.25rem 1rem;
+  transition: var(--transition);
+}
+.sidebar-links a:hover {
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-5);
+}
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  margin: 3rem auto;
+  position: relative;
+}
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--clr-primary-3);
+  transition: var(--transition);
+}
+.social-icon:hover {
+  color: var(--clr-primary-1);
+}
+.hint-text {
+  font-size: 0.75rem;
+  font-family: var(--heading-font-1);
+  /* letter-spacing: var(--letter-spacing); */
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+  position: fixed;
+  z-index: 100;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--clr-grey-9);
+  padding: 0 0.375rem;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease-in-out 1s;
+  display: none;
+}
+.hint-text::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid var(--clr-grey-9);
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
+}
+.hint-text.show {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

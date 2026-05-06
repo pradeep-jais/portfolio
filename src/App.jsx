@@ -1,13 +1,11 @@
-// import "./App.css";
+import "./styles/App.css";
+
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <h1>My new portfolio</h1>
-      <p>
-        Doing portfolio website code migration from vanilla JavaScript into
-        React
-      </p>
+      <Home />
     </>
   );
 }
