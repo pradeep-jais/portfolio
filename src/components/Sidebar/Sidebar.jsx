@@ -1,75 +1,77 @@
+import { Link } from "react-router-dom";
+
 const Sidebar = ({ isOpen, closeSidebar }) => {
   return (
-    <sidebar class={`sidebar ${isOpen ? "show" : ""}`}>
-      <button class="close-btn" id="close-btn" onClick={closeSidebar}>
-        <i class="fas fa-times"></i>
+    <aside className={`sidebar ${isOpen ? "show" : ""}`}>
+      <button className="close-btn" id="close-btn" onClick={closeSidebar}>
+        <i className="fas fa-times"></i>
       </button>
 
-      <ul class="sidebar-links">
+      <ul className="sidebar-links">
         <li>
-          <a href="./index.html">home</a>
+          <Link to="/">home</Link>
         </li>
         <li>
-          <a href="./HTML/about.html">about</a>
+          <Link to="/about">about</Link>
         </li>
         <li>
-          <a href="./HTML/projects.html">projects</a>
+          <Link to="/projects">projects</Link>
         </li>
         <li>
-          <a href="./HTML/contact.html">contact</a>
+          <Link to="/contact">contact</Link>
         </li>
       </ul>
 
-      <ul class="social-icons">
+      <ul className="social-icons">
         <li>
           <a
             href="https://www.instagram.com/gkcpradip/"
-            class="social-icon"
+            className="social-icon"
             data-label="instagram"
           >
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </a>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/pradeep-jais/"
             data-label="linkedin"
-            class="social-icon"
+            className="social-icon"
           >
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </a>
         </li>
 
         <li>
           <a
             href="https://github.com/pradeep-jais"
-            class="social-icon"
+            className="social-icon"
             data-label="github"
           >
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>
         </li>
         <li>
           <a
             href="https://twitter.com/PradeepGkc"
-            class="social-icon"
+            className="social-icon"
             data-label="twitter"
           >
-            <i class="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-twitter"></i>
           </a>
         </li>
 
         <li>
           <a
             href="https://www.facebook.com"
-            class="social-icon"
+            className="social-icon"
             data-label="facebook"
           >
-            <i class="fab fa-facebook"></i>
+            <i className="fab fa-facebook"></i>
           </a>
         </li>
       </ul>
-    </sidebar>
+    </aside>
   );
 };
 export default Sidebar;

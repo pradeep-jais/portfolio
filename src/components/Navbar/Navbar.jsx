@@ -2,6 +2,8 @@ import logoImg from "../../assets/images/pjais-logo.jpg";
 import Sidebar from "../Sidebar";
 import { useState } from "react";
 
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -11,42 +13,42 @@ const Navbar = () => {
         isOpen={isSidebarOpen}
         closeSidebar={() => setIsSidebarOpen(false)}
       />
-      <nav class="navbar">
-        <div class="nav-center section-center">
-          <a href="#" class="logo">
-            <img src={logoImg} alt="logo image" class="logo-img" />
-            <h3 class="logo-text">
+      <nav className="navbar">
+        <div className="nav-center section-center">
+          <NavLink to="/" className="logo">
+            <img src={logoImg} alt="logo image" className="logo-img" />
+            <h3 className="logo-text">
               pradeep <span>jais.</span>
             </h3>
-          </a>
-          <ul class="nav-links show">
+          </NavLink>
+          <ul className="nav-links show">
             <li>
-              <a href="./index.html" class="nav-link">
+              <NavLink to="/" className="nav-link">
                 home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="./HTML/about.html" class="nav-link">
+              <NavLink to="/about" className="nav-link">
                 about
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="./HTML/projects.html" class="nav-link">
+              <NavLink to="/projects" className="nav-link">
                 projects
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="./HTML/contact.html" class="nav-link">
+              <NavLink to="/contact" className="nav-link">
                 contact
-              </a>
+              </NavLink>
             </li>
           </ul>
           <button
-            class="toggle-btn"
+            className="toggle-btn"
             type="menu"
             onClick={() => setIsSidebarOpen(true)}
           >
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </button>
         </div>
       </nav>
