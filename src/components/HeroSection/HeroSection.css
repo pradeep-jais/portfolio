@@ -1,0 +1,121 @@
+/*
+##############
+ Hero
+##############
+ */
+.hero-title {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.hero .underline {
+  width: 9.5rem;
+  margin-right: 0;
+}
+.hero {
+  position: relative;
+  background: var(--clr-primary-9);
+}
+.hero-center {
+  min-height: calc(100vh - 5.5rem);
+  display: grid;
+  place-items: center;
+  padding: 0 2rem;
+}
+.hero-info h4 {
+  color: var(--clr-grey-5);
+}
+.hero-icons {
+  margin: 3rem 0 0 0;
+  width: 100%;
+}
+.hero-btn {
+  margin-top: 1.25rem;
+}
+.hero-img {
+  display: none;
+  width: 20rem;
+  height: 15rem;
+  overflow: hidden;
+  position: relative;
+}
+.hero-blob {
+  position: absolute;
+  top: -3rem;
+  left: 2rem;
+  width: 16rem;
+  z-index: 5;
+  animation: animate-blob 50s linear infinite alternate;
+}
+@keyframes animate-blob {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hero-photo {
+  position: absolute;
+  width: 100%;
+  top: 1rem;
+  max-height: 19rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  z-index: 6;
+}
+#blob2 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero-img {
+    display: block;
+  }
+  .hero-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-icons {
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-icons {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1980px) {
+  .hero-center {
+    min-height: 100%;
+  }
+}
+/* For hint text position to absolute */
+.hero-info {
+  position: relative;
+}
+/* dark theme */
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 6rem;
+  right: 2rem;
+  outline: 2px solid var(--clr-primary-2);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  z-index: 100;
+}
+.theme-text {
+  text-transform: capitalize;
+  color: var(--clr-primary-2);
+}
+.theme-color {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.theme .light {
+  background: var(--clr-primary-5);
+}
+.theme .dark {
+  background: var(--clr-black);
+}

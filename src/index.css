@@ -3,6 +3,12 @@
  Global CSS
 ##############
  */
+/*
+ Fonts 
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap");
+
 *,
 ::after,
 ::before {
@@ -10,13 +16,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/*
- Fonts 
- */
-
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap");
-
 html {
   font-size: 100%;
 } /*16px*/

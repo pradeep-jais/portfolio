@@ -1,9 +1,13 @@
+import HeroSection from "../../components/HeroSection";
+import SkillsSection from "../../components/SkillsSection";
+import About from "../About";
+
 const Home = () => {
   return (
     <>
-      <div className="home">
-        <h1>Home</h1>
-      </div>
+      <HeroSection />
+      <About />
+      <SkillsSection />
     </>
   );
 };
