@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ projectData }) => {
-  console.log(projectData);
   const { id, thumbnail, title, desc, techUsed, github, url } = projectData;
 
   return (
@@ -14,8 +13,8 @@ const ProjectCard = ({ projectData }) => {
         <div className="stack">
           <p>tech stack : </p>
           <div className="tech-stack">
-            {techUsed.map((tech) => {
-              return <p>{tech}</p>;
+            {techUsed.map((tech, i) => {
+              return <p key={i}>{tech}</p>;
             })}
           </div>
         </div>
