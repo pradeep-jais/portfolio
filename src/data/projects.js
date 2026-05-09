@@ -1,5 +1,4 @@
 import { projectsThumbnail } from "../assets/projects-thumbnail";
-console.log(projectsThumbnail);
 
 const projectsData = [
   {
@@ -27,16 +26,16 @@ const projectsData = [
     featured: false,
     title: "tea station",
     techUsed: ["HTML", "CSS"],
-    desc: 'A website for a company named "Tea Station". Project based on mainly CSS flexbox model and media query to make responsive layout. It uses animations and some JavaScript to add basic functionality like toggle sidebar and footer date.',
+    desc: 'A website for a company named "Tea Station". Project based on mainly CSS Flexbox model and media query to make responsive layout. It uses animations and some JavaScript to add basic functionality like toggle sidebar and footer date.',
     url: "https://tea-station-gkc.netlify.app/",
-    thumbnail: projectsThumbnail.teaStation,
+    thumbnail: projectsThumbnail["tea-station"],
   },
   {
     id: 4,
     featured: true,
     title: "backroad tour",
     techUsed: ["HTML", "CSS"],
-    desc: "Building this project using CSS Grid model makes our life a lot easier. It is a powerful tool to make complex layout easily and reponsive to every screen size. It has some JS to smooth scroll.",
+    desc: "Building this project using CSS Grid model makes our life a lot easier. It is a powerful tool to make complex layout easily and responsive to every screen size. It has some JS to smooth scroll.",
     github: "https://github.com/pradeep-jais/backroad-company-project",
     url: "https://backroad-tour-test.netlify.app/",
     thumbnail: projectsThumbnail.backroad,
@@ -48,7 +47,7 @@ const projectsData = [
     techUsed: ["HTML", "CSS"],
     desc: "In this project i use Grid model to make multi-column layout, tiles, centering the div and a complex page layout with navbar, hero, sidebar, footer. ",
     url: "https://grid-mini-pj.netlify.app/",
-    thumbnail: projectsThumbnail.gridMini,
+    thumbnail: projectsThumbnail["grid-mini"],
   },
   {
     id: 6,
@@ -58,7 +57,7 @@ const projectsData = [
     desc: "A full working demo portfolio website with multiple pages like about, projects, contact with a basic form. It is made fully responsive with latest CSS features. Some JavaScript for basic functionality like smooth scroll, nav-toggle, footer date etc. It has interesting skills and blog section and also a video embedded.",
     url: "https://john-portfolio-demo.netlify.app/",
     github: "https://github.com/pradeep-jais/portfolio-demo",
-    thumbnail: projectsThumbnail.johnFolio,
+    thumbnail: projectsThumbnail["john-folio"],
   },
   {
     id: 7,
@@ -68,7 +67,7 @@ const projectsData = [
     desc: "A basic DOM manipulation project which create random color value and add it to the element on page to flip the color randomly.",
     github: "",
     url: "https://color-flipper-magic.netlify.app/",
-    thumbnail: projectsThumbnail.colorFlipper,
+    thumbnail: projectsThumbnail["color-flipper"],
   },
   {
     id: 8,
@@ -95,10 +94,10 @@ const projectsData = [
     featured: false,
     title: "Filters",
     techUsed: ["HTML", "CSS", "JavaScript"],
-    desc: "This project provide different methods to filter out some product from a list of product. Filter can be done based on product company name or other unique feature. It has also a search faciliity. ",
+    desc: "This project provide different methods to filter out some product from a list of product. Filter can be done based on product company name or other unique feature. It has also a search facility. ",
     github: "",
     url: "https://filter-button-pj.netlify.app/",
-    thumbnail: projectsThumbnail.filtersBtn,
+    thumbnail: projectsThumbnail["filters-btn"],
   },
   {
     id: 11,
@@ -108,14 +107,14 @@ const projectsData = [
     desc: "This is a plain vanilla JavaScript project to practice fetch API. The app fetches complex user data and destructure it to make a beautiful looking user Card UI. This has a button to get new random user, and various utility buttons to see different info about person like name,contact,address,mail etc. ",
     github: "",
     url: "https://random-user-apis.netlify.app/",
-    thumbnail: projectsThumbnail.randomUser,
+    thumbnail: projectsThumbnail["random-user"],
   },
   {
     id: 12,
     featured: true,
     title: "cocktail store",
     techUsed: ["HTML", "CSS", "JavaScript"],
-    desc: "It is a good asynchronous JavaScipt(AJAX) project to fetch cocktail API to get the list. It has search feature which directly search from API using query string parameter and display the product.",
+    desc: "It is a good asynchronous JavaScript(AJAX) project to fetch cocktail API to get the list. It has search feature which directly search from API using query string parameter and display the product.",
     github: "https://github.com/pradeep-jais/cocktail-api",
     url: "https://my-cocktail-store.netlify.app/",
     thumbnail: projectsThumbnail.cocktails,
@@ -148,7 +147,7 @@ const projectsData = [
     desc: `My first E-Commerce project using vanilla JavaScript and HTML-CSS. The Comfy store has all the basic features of a shopping app. A multi-page app with various products which can be added to the cart for shopping.`,
     github: "https://github.com/pradeep-jais/E-Com-Comfy-Store",
     url: "https://e-com-comfy-store.netlify.app/",
-    thumbnail: projectsThumbnail.eComComfyStore,
+    thumbnail: projectsThumbnail["e-com-comfy-store"],
   },
   {
     id: 16,
@@ -158,7 +157,7 @@ const projectsData = [
     desc: `Implementing simple carousel(image slider) functionality in React JS with functions like next image, previous image, auto update image after a few second and go to any images`,
     github: "https://github.com/pradeep-jais/react-carousel",
     url: "https://react-carousel-js.netlify.app/",
-    thumbnail: projectsThumbnail.carouselReact,
+    thumbnail: projectsThumbnail["carousel-react"],
   },
   {
     id: 17,
@@ -168,7 +167,7 @@ const projectsData = [
     desc: `A simple shopping cart with basic features like increase/decrease product amount, remove product, update price and total cart item. The project is build in latest ReactJS 18 with Redux toolkit library for centralized state management. `,
     github: "https://github.com/pradeep-jais/react-redux-cart-project",
     url: "https://react-reduxtool-cart.netlify.app/",
-    thumbnail: projectsThumbnail.reduxCart,
+    thumbnail: projectsThumbnail["redux-cart"],
   },
   {
     id: 18,
@@ -178,7 +177,7 @@ const projectsData = [
     desc: `A fully functional modern Youtube clone application in React JS using rapidAPI for fetching youtube data and Material UI for its beautiful design. Its my first big project in React where I'll implement React-router for routing, redux library toolkit for centralized state management, axios for Http requests, hooks and various advance React concepts. `,
     github: "https://github.com/pradeep-jais/youtube-clone-react",
     url: "https://youtube-jais.netlify.app/",
-    thumbnail: projectsThumbnail.youtubeClone,
+    thumbnail: projectsThumbnail["youtube-clone-react"],
   },
   {
     id: 19,
@@ -188,7 +187,7 @@ const projectsData = [
     desc: `An authenticated project management dashboard app using React, Firebase Auth, and Firestore with nested collections, protected routes, and dynamic CRUD operations. Purpose is learn and build real authenticated app with data per users. Get hands on practice with react, routing, protected routes, firebase, firestore and handling nested data structure in firestore. A streamlined, high-performance Project Management Tool built for easy client project management. This isn't just another to-do list, it's a full-stack dashboard designed with a focus on visual hierarchy, scalable architecture, responsive design and fluid UX.`,
     github: "https://github.com/pradeep-jais/Jira-Lite",
     url: "https://project-manager-lite.web.app/",
-    thumbnail: projectsThumbnail.jiraLite,
+    thumbnail: projectsThumbnail["jira-lite"],
   },
 ];
 

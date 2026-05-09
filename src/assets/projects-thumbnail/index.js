@@ -1,23 +1,8 @@
-export const projectsThumbnail = {
-  backroad: import("./backroad.jpg"),
-  cards: import("./cards.jpg"),
-  coffee: import("./coffee.jpg"),
-  gridMini: import("./grid-mini.jpg"),
-  johnFolio: import("./john-folio.jpg"),
-  teaStation: import("./tea-station.jpg"),
-  gallery: import("./gallery.jpg"),
-  colorFlipper: import("./color-flipper.jpg"),
-  timer: import("./timer.jpg"),
-  calculator: import("./calci.jpg"),
-  carouselReact: import("./carousel-react.jpeg"),
-  cocktail: import("./cocktails.jpg"),
-  colorFlipper: import("./color-flipper.jpg"),
-  eComComfy: import("./e-com-comfy-store.jpeg"),
-  filtersBtn: import("./filters-btn.jpg"),
-  gallery: import("./gallery.jpg"),
-  jiraLite: import("./jira-lite.png"),
-  pagination: import("./pagination.jpg"),
-  randomUser: import("./random-user.jpg"),
-  reduxCart: import("./redux-cart.jpeg"),
-  youtubeCloneReact: import("./youtube-clone-react.jpeg"),
-};
+const images = import.meta.glob("./*.{png,jpg,jpeg,svg}", { eager: true });
+
+export const projectsThumbnail = Object.fromEntries(
+  Object.entries(images).map(([path, module]) => {
+    const key = path.replace("./", "").split(".")[0];
+    return [key, module.default];
+  }),
+);
