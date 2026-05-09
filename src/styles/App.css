@@ -13,3 +13,28 @@
   width: calc(129% + 1.3px);
   height: 93px;
 }
+.tooltip {
+  position: fixed;
+  background: var(--clr-primary-1);
+  color: var(--clr-primary-9);
+  font-size: 0.75rem;
+  pointer-events: none;
+  padding: 0.15rem 1rem;
+  border-radius: 0.5rem;
+  z-index: 999;
+  display: none;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  background: var(--clr-primary-1);
+  width: 0.5rem;
+  height: 0.5rem;
+  z-index: -1;
+}
+.tooltip.active {
+  display: block;
+}

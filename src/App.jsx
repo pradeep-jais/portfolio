@@ -9,10 +9,12 @@ import Projects from "./pages/Projects";
 import SingleProject from "./pages/SingleProject";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
+import ToolTip from "./components/ToolTip";
 
 function App() {
   return (
     <BrowserRouter>
+      <ToolTip />
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Home />} />

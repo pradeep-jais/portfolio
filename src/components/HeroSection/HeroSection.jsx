@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import HeroImg from "../../assets/images/hero-img.png";
-console.log(HeroImg);
+import { showToolTip, hideToolTip } from "../ToolTip";
 
 const HeroSection = () => {
   return (
@@ -24,6 +24,10 @@ const HeroSection = () => {
                 target="_blank"
                 className="social-icon"
                 data-label="instagram"
+                onMouseEnter={(e) => {
+                  showToolTip(e);
+                }}
+                onMouseLeave={hideToolTip}
               >
                 <i className="fab fa-instagram"></i>
               </a>
@@ -34,6 +38,11 @@ const HeroSection = () => {
                 target="_blank"
                 data-label="linkedin"
                 className="social-icon"
+                onMouse
+                onMouseOver={(e) => {
+                  showToolTip(e);
+                }}
+                onMouseLeave={hideToolTip}
               >
                 <i className="fab fa-linkedin"></i>
               </a>
@@ -45,6 +54,9 @@ const HeroSection = () => {
                 target="_blank"
                 className="social-icon"
                 data-label="github"
+                onMouseOver={(e) => {
+                  showToolTip(e);
+                }}
               >
                 <i className="fa-brands fa-github"></i>
               </a>

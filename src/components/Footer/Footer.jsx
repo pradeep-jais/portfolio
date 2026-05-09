@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { hideToolTip, showToolTip } from "../ToolTip";
 
 const Footer = () => {
   return (
@@ -32,6 +33,10 @@ const Footer = () => {
             target="_blank"
             className="social-icon"
             data-label="instagram"
+            onMouseEnter={(e) => {
+              showToolTip(e);
+            }}
+            onMouseLeave={hideToolTip}
           >
             <i className="fab fa-instagram"></i>
           </a>
@@ -42,6 +47,10 @@ const Footer = () => {
             target="_blank"
             data-label="linkedin"
             className="social-icon"
+            onMouseEnter={(e) => {
+              showToolTip(e);
+            }}
+            onMouseLeave={hideToolTip}
           >
             <i className="fab fa-linkedin"></i>
           </a>
