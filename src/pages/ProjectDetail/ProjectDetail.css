@@ -1,0 +1,28 @@
+/*
+##############
+ single Project
+##############
+ */
+.single-project {
+  background: var(--clr-primary-10);
+}
+
+.single-project-container {
+  padding: 0 1rem 5rem 1rem;
+}
+.single-project img {
+  height: 16rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .single-project-container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .single-project img {
+    height: auto;
+  }
+}

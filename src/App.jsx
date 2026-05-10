@@ -6,10 +6,10 @@ import AppLayout from "./pages/AppLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import SingleProject from "./pages/SingleProject";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import ToolTip from "./components/ui/ToolTip";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="projects/:id" element={<SingleProject />} />
+          <Route path="project/:id" element={<ProjectDetail />} />
           <Route path="contact" element={<Contact />} />
         </Route>
         <Route path="*" element={<Error />} />
