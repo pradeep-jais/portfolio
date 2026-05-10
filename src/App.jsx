@@ -9,11 +9,12 @@ import Projects from "./pages/Projects";
 import SingleProject from "./pages/SingleProject";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
-import ToolTip from "./components/ToolTip";
+import ToolTip from "./components/ui/ToolTip";
 
 function App() {
   return (
     <BrowserRouter>
+      {/* Global tooltip for icons */}
       <ToolTip />
       <Routes>
         <Route path="/" element={<AppLayout />}>

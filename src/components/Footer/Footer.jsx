@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { hideToolTip, showToolTip } from "../ToolTip";
+import { hideToolTip, showToolTip } from "../ui/ToolTip";
+import { socialLinks } from "../../data/socialLinks";
+import SocialLink from "../ui/SocialILink";
 
 const Footer = () => {
   return (
@@ -27,67 +29,13 @@ const Footer = () => {
         </li>
       </ul>
       <ul className="social-icons footer-icons">
-        <li>
-          <a
-            href="https://www.instagram.com/gkcpradip/"
-            target="_blank"
-            className="social-icon"
-            data-label="instagram"
-            onMouseEnter={(e) => {
-              showToolTip(e);
-            }}
-            onMouseLeave={hideToolTip}
-          >
-            <i className="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/pradeep-jais/"
-            target="_blank"
-            data-label="linkedin"
-            className="social-icon"
-            onMouseEnter={(e) => {
-              showToolTip(e);
-            }}
-            onMouseLeave={hideToolTip}
-          >
-            <i className="fab fa-linkedin"></i>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://github.com/pradeep-jais"
-            target="_blank"
-            className="social-icon"
-            target="_blank"
-            data-label="github"
-          >
-            <i className="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/PradeepGkc"
-            target="_blank"
-            className="social-icon"
-            data-label="twitter"
-          >
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://www.facebook.com"
-            className="social-icon"
-            target="_blank"
-            data-label="facebook"
-          >
-            <i className="fab fa-facebook"></i>
-          </a>
-        </li>
+        {socialLinks.map((socialLink) => {
+          return (
+            <li key={socialLink.name}>
+              <SocialLink socialLink={socialLink} />
+            </li>
+          );
+        })}
       </ul>
       <p className="footer-text">
         copyrights &copy; all rights reserved. Pradeep Kumar official portfolio

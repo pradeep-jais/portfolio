@@ -6,6 +6,12 @@
   overflow: hidden;
   line-height: 0;
 }
+.hero {
+  transition: all 5s ease;
+}
+.hero:hover {
+  /* background: blue; */
+}
 
 .section-wave svg {
   position: relative;
@@ -15,8 +21,10 @@
 }
 .tooltip {
   position: fixed;
-  background: var(--clr-primary-1);
+  transform: translateX(-50%);
+  background: var(--clr-primary-2);
   color: var(--clr-primary-9);
+  text-transform: capitalize;
   font-size: 0.75rem;
   pointer-events: none;
   padding: 0.15rem 1rem;
@@ -30,7 +38,7 @@
   top: -4px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
-  background: var(--clr-primary-1);
+  background: inherit;
   width: 0.5rem;
   height: 0.5rem;
   z-index: -1;

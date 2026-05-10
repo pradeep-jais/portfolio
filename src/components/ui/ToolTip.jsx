@@ -11,9 +11,8 @@ const ToolTip = () => {
   showToolTip = (e) => {
     const iconRect = e.currentTarget.getBoundingClientRect();
 
-    const top = iconRect.bottom;
-    const center = iconRect.left;
-    console.log(iconRect);
+    const top = iconRect.bottom + 8;
+    const center = (iconRect.left + iconRect.right) / 2;
     setCoords({ top, left: center });
     setIsActive(true);
     setLabel(e.currentTarget.dataset.label);

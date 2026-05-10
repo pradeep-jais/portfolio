@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import projectsData from "../../data/projects";
-import ProjectCard from "../../components/ProjectCard";
+import ProjectCard from "../../components/ui/ProjectCard";
 
 const Projects = () => {
   const location = window.location.pathname;

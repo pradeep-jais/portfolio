@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 import HeroImg from "../../assets/images/hero-img.png";
-import { showToolTip, hideToolTip } from "../ToolTip";
+import { socialLinks } from "../../data/socialLinks";
+import SocialLink from "../ui/SocialILink";
 
 const HeroSection = () => {
   return (
@@ -18,70 +19,13 @@ const HeroSection = () => {
           </Link>
 
           <ul className="social-icons hero-icons">
-            <li>
-              <a
-                href="https://www.instagram.com/gkcpradip/"
-                target="_blank"
-                className="social-icon"
-                data-label="instagram"
-                onMouseEnter={(e) => {
-                  showToolTip(e);
-                }}
-                onMouseLeave={hideToolTip}
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/pradeep-jais/"
-                target="_blank"
-                data-label="linkedin"
-                className="social-icon"
-                onMouse
-                onMouseOver={(e) => {
-                  showToolTip(e);
-                }}
-                onMouseLeave={hideToolTip}
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/pradeep-jais"
-                target="_blank"
-                className="social-icon"
-                data-label="github"
-                onMouseOver={(e) => {
-                  showToolTip(e);
-                }}
-              >
-                <i className="fa-brands fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/PradeepGkc"
-                target="_blank"
-                className="social-icon"
-                data-label="twitter"
-              >
-                <i className="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.facebook.com"
-                className="social-icon"
-                target="_blank"
-                data-label="facebook"
-              >
-                <i className="fab fa-facebook"></i>
-              </a>
-            </li>
+            {socialLinks.map((socialLink) => {
+              return (
+                <li key={socialLink.name}>
+                  <SocialLink socialLink={socialLink} />
+                </li>
+              );
+            })}
           </ul>
         </article>
         <article className="hero-img-container">
