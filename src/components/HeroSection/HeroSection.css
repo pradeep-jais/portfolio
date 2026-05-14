@@ -31,41 +31,50 @@
 .hero-btn {
   margin-top: 1.25rem;
 }
-.hero-img {
+.hero-img-container {
   display: none;
-  width: 20rem;
-  height: 15rem;
+  width: 18rem;
+  height: 16rem;
   overflow: hidden;
   position: relative;
 }
-.hero-blob {
-  position: absolute;
-  top: -3rem;
-  left: 2rem;
-  width: 16rem;
-  z-index: 5;
-  animation: animate-blob 50s linear infinite alternate;
+.hero-pic {
+  filter: drop-shadow(0px 0px 5px var(--clr-primary-9))
+    drop-shadow(0px 5px 10px var(--clr-primary-1));
+  position: relative;
+  z-index: 6;
 }
-@keyframes animate-blob {
+.hero-blob {
+  content: "";
+  position: absolute;
+  width: 12rem;
+  left: 3rem;
+  top: 2rem;
+  aspect-ratio: 1/1;
+  background: linear-gradient(0deg, var(--clr-primary-1), var(--clr-primary-4));
+  z-index: 5;
+  border-radius: 70% 30% 37% 63% / 39% 36% 64% 61%;
+  animation:
+    animateBlob 8s ease-in-out infinite,
+    rotateBlob 25s linear infinite;
+  box-shadow: 2px 2px 15px var(--clr-primary-4);
+}
+@keyframes animateBlob {
+  0%,
+  100% {
+    border-radius: 70% 30% 37% 63% / 39% 36% 64% 61%;
+  }
+  50% {
+    border-radius: 34% 66% 59% 41% / 73% 66% 34% 27%;
+  }
+}
+@keyframes rotateBlob {
   to {
     transform: rotate(360deg);
   }
 }
-.hero-photo {
-  position: absolute;
-  width: 100%;
-  top: 1rem;
-  max-height: 19rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  z-index: 6;
-}
-#blob2 {
-  display: none;
-}
 @media screen and (min-width: 768px) {
-  .hero-img {
+  .hero-img-container {
     display: block;
   }
   .hero-center {
