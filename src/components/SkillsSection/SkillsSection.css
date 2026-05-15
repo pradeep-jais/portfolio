@@ -4,7 +4,7 @@
 ##############
  */
 .skills {
-  background: var(--clr-primary-9);
+  background: var(--clr-bg-dark);
 }
 .stacked-waves {
   color: #fff;
@@ -32,8 +32,8 @@
   flex-wrap: wrap;
 }
 .skill-card {
-  background: var(--clr-primary-10);
-  border: 1px solid var(--clr-grey-8);
+  background: linear-gradient(180deg, var(--clr-bg-light), var(--clr-bg));
+  border: 1px solid var(--clr-border);
   padding: 0.75rem 1rem;
   border-radius: var(--border-radius);
   width: 100%;
@@ -56,15 +56,15 @@
   margin-bottom: -8px;
 }
 .skill-card i {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary);
   font-size: 1.5rem;
   margin-top: 0.25rem;
   transition: var(--transition);
 }
 .skill-heading span {
-  font-size: var(--small-text);
-  color: var(--clr-grey-5);
-  font-family: var(--heading-font-2);
+  font-size: 0.9rem;
+  color: var(--clr-text-muted);
+  font-family: var(--body-font);
 }
 .skill-names {
   display: flex;
@@ -72,8 +72,8 @@
   flex-wrap: wrap;
 }
 .skill-names span {
-  background: var(--clr-primary-9);
-  border: 1px solid var(--clr-grey-8);
+  background: var(--clr-bg-light);
+  border: 1px solid var(--clr-border);
   font-size: 0.8rem;
   padding: 0.15rem 0.5rem;
   border-radius: var(--border-radius);

@@ -5,10 +5,9 @@
  */
 .about {
   position: relative;
-  background: var(--clr-primary-10);
 }
 .about .shape-fill {
-  fill: var(--clr-primary-9);
+  fill: var(--clr-bg);
 }
 .about-wave {
   position: absolute;
@@ -55,7 +54,7 @@
   height: 100%;
   bottom: -2rem;
   right: -2rem;
-  border: 5px solid var(--clr-primary-5);
+  border: 5px solid var(--clr-primary);
   border-radius: var(--border-radius);
   /* z-index: -1; */
 }

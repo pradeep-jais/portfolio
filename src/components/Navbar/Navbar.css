@@ -4,7 +4,7 @@
 ##############
  */
 .navbar {
-  background: var(--clr-primary-9);
+  background: var(--clr-surface);
   height: 5.5rem;
 }
 .nav-center {
@@ -24,18 +24,19 @@
   /* object-fit: cover; */
   image-rendering: smooth;
   border-radius: 50%;
+  box-shadow: var(--shadow-dark);
 }
 .logo-text {
   font-size: 2rem;
-  color: var(--clr-primary-1);
+  color: var(--clr-text);
   margin: 0;
   padding-left: 1rem;
-  font-family: var(--icon-font);
+  font-family: var(--heading-font-1);
   font-weight: bold;
-  text-shadow: 0 5px 4px #0000006d;
+  text-shadow: 0 3px 5px #0000008c;
 }
 .logo span {
-  color: var(--clr-primary-4);
+  color: var(--clr-primary);
 }
 .nav-links {
   font-family: var(--heading-font-1);
@@ -46,7 +47,7 @@
   border: none;
   background: transparent;
   font-size: 2.25rem;
-  color: var(--clr-primary-1);
+  color: var(--clr-primary);
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -60,13 +61,13 @@
     gap: 2rem;
   }
   .nav-link {
-    color: var(--clr-primary-1);
+    color: var(--clr-text);
     text-transform: capitalize;
     letter-spacing: var(--letter-spacing);
     font-weight: bold;
   }
   .nav-link:hover {
-    color: var(--clr-primary-5);
+    color: var(--clr-primary-hover);
   }
 }
 @media screen and (min-width: 992px) {
@@ -82,5 +83,5 @@
   width: 100%;
   box-shadow: var(--shadow-light);
   z-index: 10;
-  background: var(--clr-primary-10);
+  background: var(--clr-bg-light);
 }

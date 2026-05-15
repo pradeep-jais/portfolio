@@ -11,10 +11,10 @@ const ProjectCard = ({ projectData }) => {
       <div className="project-info">
         <h4>{title}</h4>
         <div className="stack">
-          <p>tech stack : </p>
+          <span>tech stack:</span>
           <div className="tech-stack">
             {techUsed.map((tech, i) => {
-              return <p key={i}>{tech}</p>;
+              return <span key={i}>{tech}</span>;
             })}
           </div>
         </div>
@@ -22,11 +22,11 @@ const ProjectCard = ({ projectData }) => {
           className={`project-btn-container ${github || "project-btn-container-flag"}`}
         >
           {github && (
-            <a href={github} target="_blank" className="btn btn-hipster">
+            <a href={github} target="_blank" className="btn">
               view repo
             </a>
           )}
-          <a href={url} target="_blank" className="btn btn-hipster">
+          <a href={url} target="_blank" className="btn">
             view project
           </a>
         </footer>

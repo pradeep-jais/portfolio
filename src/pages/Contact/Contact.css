@@ -5,10 +5,10 @@ contact
  */
 .contact {
   position: relative;
-  background: var(--clr-primary-9);
+  background: var(--clr-bg);
 }
 .contact .shape-fill {
-  fill: var(--clr-primary-10);
+  fill: var(--clr-bg);
 }
 .contact-center {
   display: grid;
@@ -26,10 +26,10 @@ contact
 }
 .form {
   max-width: var(--fixed-width);
-  background: var(--clr-primary-10);
+  background: var(--clr-bg-light);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-light);
-  padding: 1rem;
+  padding: 2rem 1.5rem;
   transition: var(--transition);
 }
 .form:hover {
@@ -38,7 +38,7 @@ contact
 .form-label {
   display: block;
   font-size: var(--small-text);
-  color: var(--clr-primary-1);
+  color: var(--clr-text-muted);
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   letter-spacing: var(--letter-spacing);
@@ -49,20 +49,21 @@ contact
   width: 100%;
   padding: 0.375rem 0.75rem;
   border-radius: var(--border-radius);
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-9);
-  border: 1px solid var(--clr-grey-5);
+  color: var(--clr-text);
+  background: var(--clr-white);
+  border: 1px solid var(--clr-border);
   font-family: var(--body-font);
+  box-shadow: var(--shadow-light);
 }
 .form-row {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 ::placeholder {
   font-size: small;
   letter-spacing: 1px;
   font-family: inherit;
   text-transform: capitalize;
-  color: var(--clr-grey-3);
+  color: var(--clr-text-muted);
 }
 @media screen and (min-width: 678px) {
   .contact-center {

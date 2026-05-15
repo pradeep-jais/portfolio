@@ -22,8 +22,8 @@
 .tooltip {
   position: fixed;
   transform: translateX(-50%);
-  background: var(--clr-primary-2);
-  color: var(--clr-primary-9);
+  background: var(--clr-primary);
+  color: var(--clr-white);
   text-transform: capitalize;
   font-size: 0.75rem;
   pointer-events: none;

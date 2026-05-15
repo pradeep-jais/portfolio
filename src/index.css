@@ -22,17 +22,17 @@ html {
 
 :root {
   /* theme color */
-  --clr-bg: hsl(205, 94%, 94%);
-  --clr-bg-dark: hsl(203, 100%, 90%);
-  --clr-bg-light: hsl(205, 94%, 100%);
+  --clr-bg-light: hsl(205, 100%, 98%);
+  --clr-bg: hsl(205, 100%, 95%);
+  --clr-bg-dark: hsl(203, 100%, 92%);
   --clr-text: hsl(209, 61%, 16%);
   --clr-text-muted: hsl(209, 34%, 30%);
-  --clr-primary: hsl(205, 100%, 50%);
-  --clr-primary-hover: hsl(205, 90%, 40%);
+  --clr-primary: hsl(205, 100%, 30%);
+  --clr-primary-hover: hsl(205, 100%, 20%);
   --clr-secondary: hsl(61, 98%, 50%);
   --clr-secondary-hover: hsl(61, 98%, 40%);
-  --clr-border: hsl(209, 50%, 30%);
-  --clr-highlight: hsl(209, 50%, 60%);
+  --clr-border: hsl(209, 50%, 75%);
+  --clr-highlight: hsl(209, 50%, 50%);
 
   /* Regular color */
   --clr-white: #fff;
@@ -43,7 +43,7 @@ html {
   --clr-info: hsl(153, 99%, 54%);
 
   /* Derived variable */
-  --clr-surface: var(--bg);
+  --clr-surface: var(--clr-bg);
 
   /* fonts  */
   --heading-font-1: "Spectral", serif;
@@ -56,8 +56,8 @@ html {
   --transition: all 0.3s ease-in-out;
   --max-width: 1172px;
   --fixed-width: 600px;
-  --shadow-light: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  --shadow-dark: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  --shadow-light: 2px 5px 12px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 4px 8px 20px rgba(0, 0, 0, 0.2);
   /* from tailwind  */
   --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.05);
   --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -81,6 +81,7 @@ p {
   margin-bottom: 1.5rem;
   max-width: 40em;
   color: var(--clr-text-muted);
+  font-family: var(--body-font);
 }
 
 h1,
@@ -142,7 +143,7 @@ ul {
 /* buttons  */
 .btn {
   cursor: pointer;
-  color: var(--clr-text);
+  color: var(--clr-white);
   font-family: var(--heading-font-1);
   background: var(--clr-primary);
   border: transparent;
@@ -188,14 +189,10 @@ ul {
   text-align: center;
   margin-bottom: 4rem;
 }
-.title h1 {
-  /* margin-bottom: 0; */
-  color: var(--clr-primary-1);
-}
 .underline {
   width: 5rem;
   height: 0.25rem;
-  background: var(--clr-primary-5);
+  background: var(--clr-primary);
   margin: 0 auto;
   margin-top: -1.5rem;
 }
