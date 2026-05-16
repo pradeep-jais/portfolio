@@ -23,9 +23,11 @@
   position: fixed;
   transform: translateX(-50%);
   background: var(--clr-primary);
-  color: var(--clr-white);
+  color: var(--clr-bg-light);
   text-transform: capitalize;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: bold;
   pointer-events: none;
   padding: 0.15rem 1rem;
   border-radius: 0.5rem;

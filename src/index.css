@@ -7,7 +7,7 @@
  Fonts 
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Comic+Relief:wght@400;700&family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap");
 
 *,
 ::after,
@@ -21,18 +21,18 @@ html {
 } /*16px*/
 
 :root {
-  /* theme color */
-  --clr-bg-light: hsl(205, 100%, 98%);
-  --clr-bg: hsl(205, 100%, 95%);
-  --clr-bg-dark: hsl(203, 100%, 92%);
-  --clr-text: hsl(209, 61%, 16%);
-  --clr-text-muted: hsl(209, 34%, 30%);
-  --clr-primary: hsl(205, 100%, 30%);
-  --clr-primary-hover: hsl(205, 100%, 20%);
+  /* theme color - default: dark*/
+  --clr-bg-light: hsl(205, 100%, 12%);
+  --clr-bg: hsl(205, 100%, 10%);
+  --clr-bg-dark: hsl(205, 100%, 8%);
+  --clr-text: hsl(209, 100%, 98%);
+  --clr-text-muted: hsl(209, 30%, 70%);
+  --clr-primary: hsl(205, 100%, 70%);
+  --clr-primary-hover: hsl(205, 100%, 85%);
   --clr-secondary: hsl(61, 98%, 50%);
   --clr-secondary-hover: hsl(61, 98%, 40%);
-  --clr-border: hsl(209, 50%, 75%);
-  --clr-highlight: hsl(209, 50%, 50%);
+  --clr-border: hsl(209, 30%, 40%);
+  --clr-highlight: hsl(209, 30%, 70%);
 
   /* Regular color */
   --clr-white: #fff;
@@ -46,8 +46,9 @@ html {
   --clr-surface: var(--clr-bg);
 
   /* fonts  */
-  --heading-font-1: "Spectral", serif;
-  --heading-font-2: "Roboto", sans-serif;
+  --heading-font-1: "Comic Relief", system-ui;
+  --heading-font-2: "Spectral", serif;
+  --heading-font-3: "Roboto", serif;
   --body-font: "Karla", sans-serif;
   --small-text: 0.7em;
   /* rest of the vars  */
@@ -66,8 +67,19 @@ html {
   --shadow-4:
     0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.05);
 }
-.theme-dark {
-  /* To be added */
+.theme-light {
+  /* theme color */
+  --clr-bg-light: hsl(205, 100%, 98%);
+  --clr-bg: hsl(205, 100%, 95%);
+  --clr-bg-dark: hsl(203, 100%, 92%);
+  --clr-text: hsl(209, 61%, 16%);
+  --clr-text-muted: hsl(209, 34%, 30%);
+  --clr-primary: hsl(205, 100%, 25%);
+  --clr-primary-hover: hsl(205, 100%, 15%);
+  --clr-secondary: hsl(61, 98%, 50%);
+  --clr-secondary-hover: hsl(61, 98%, 40%);
+  --clr-border: hsl(209, 50%, 75%);
+  --clr-highlight: var(--clr-bg);
 }
 body {
   background: var(--clr-bg-light);
@@ -143,9 +155,10 @@ ul {
 /* buttons  */
 .btn {
   cursor: pointer;
-  color: var(--clr-white);
   font-family: var(--heading-font-1);
   background: var(--clr-primary);
+  color: var(--clr-bg-dark);
+  font-weight: normal;
   border: transparent;
   border-radius: var(--border-radius);
   letter-spacing: var(--letter-spacing);
