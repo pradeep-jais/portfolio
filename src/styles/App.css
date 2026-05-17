@@ -6,19 +6,34 @@
   overflow: hidden;
   line-height: 0;
 }
-.hero {
-  transition: all 5s ease;
-}
-.hero:hover {
-  /* background: blue; */
-}
 
 .section-wave svg {
   position: relative;
   display: block;
-  width: calc(129% + 1.3px);
+  width: calc(130% + 1.3px);
   height: 93px;
 }
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 25rem;
+  margin-inline: auto;
+  position: relative;
+  margin-top: 3rem;
+  padding: 0 2.5rem;
+}
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--clr-primary);
+  transition: var(--transition);
+}
+.social-icon:hover {
+  color: var(--clr-primary-hover);
+}
+
 .tooltip {
   position: fixed;
   transform: translateX(-50%);

@@ -4,7 +4,7 @@
   inset: 0;
   text-align: center;
   background: var(--clr-bg-dark);
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   transition: var(--transition);
   z-index: 100;
   /* overflow: hidden; */
@@ -43,22 +43,6 @@
 .sidebar-links a:hover {
   color: var(--clr-primary);
   background: var(--clr-surface);
-}
-.social-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 20rem;
-  margin: 3rem auto;
-  position: relative;
-}
-.social-icon {
-  font-size: 1.5rem;
-  color: var(--clr-primary);
-  transition: var(--transition);
-}
-.social-icon:hover {
-  color: var(--clr-primary-hover);
 }
 @media screen and (min-width: 768px) {
   .sidebar {
