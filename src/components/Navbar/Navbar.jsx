@@ -7,6 +7,14 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  const toggleTheme = () => {
+    if (document.documentElement.className === "theme-light") {
+      document.documentElement.classList.remove("theme-light");
+    } else {
+      document.documentElement.classList.add("theme-light");
+    }
+  };
+
   return (
     <>
       <Sidebar
@@ -41,6 +49,11 @@ const Navbar = () => {
               <NavLink to="/contact" className="nav-link">
                 contact
               </NavLink>
+            </li>
+            <li>
+              <button className="theme-btn" onClick={toggleTheme}>
+                <i class="fa-solid fa-lightbulb"></i>
+              </button>
             </li>
           </ul>
           <button

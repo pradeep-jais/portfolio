@@ -22,7 +22,7 @@ const ProjectDetail = () => {
           <div className="single-project-info">
             <h2>{title}</h2>
             <div className="stack">
-              <p>tech stack :</p>
+              <span>tech stack :</span>
               <div className="tech-stack">
                 {techUsed.map((tech, i) => {
                   return <span key={i}>{tech}</span>;

@@ -4,12 +4,12 @@
 ##############
  */
 .footer {
-  background: var(--footer-dark-bg);
+  background: var(--clr-bg-dark);
   display: grid;
   place-content: center;
   padding: 3rem 1rem;
   text-align: center;
-  border-top: 1px solid var(--clr-grey-5);
+  border-top: 1px solid var(--clr-border);
 }
 .footer-links {
   display: flex;
@@ -19,24 +19,23 @@
   letter-spacing: var(--letter-spacing);
 }
 .footer-link {
-  color: var(--footer-dark-link);
+  color: var(--clr-text);
   font-size: 1rem;
   transition: var(--transition);
 }
 .footer-link:hover {
-  color: var(--footer-light-link);
+  color: var(--clr-primary);
 }
 .footer-icons .social-icon {
-  color: var(--footer-light-link);
+  color: var(--clr-primary);
 }
 .footer-icons .social-icon:hover {
-  color: var(--footer-dark-link);
+  color: var(--clr-primary-hover);
 }
 .footer-text {
   font-family: var(--body-font);
   letter-spacing: 2px;
   text-transform: capitalize;
-  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 568px) {
   .footer-links {

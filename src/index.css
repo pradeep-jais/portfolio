@@ -7,7 +7,7 @@
  Fonts 
  */
 
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Comic+Relief:wght@400;700&family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap");
 
 *,
 ::after,
@@ -21,61 +21,44 @@ html {
 } /*16px*/
 
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(203, 100%, 90%);
-  --clr-primary-10: hsl(205, 94%, 94%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  /* theme color - default: dark*/
+  --clr-bg-light: hsl(205, 100%, 12%);
+  --clr-bg: hsl(205, 100%, 10%);
+  --clr-bg-dark: hsl(205, 100%, 8%);
+  --clr-text: hsl(209, 100%, 98%);
+  --clr-text-muted: hsl(209, 30%, 70%);
+  --clr-primary: hsl(205, 100%, 70%);
+  --clr-primary-hover: hsl(205, 100%, 85%);
+  --clr-secondary: hsl(61, 98%, 50%);
+  --clr-secondary-hover: hsl(61, 98%, 40%);
+  --clr-border: hsl(209, 30%, 40%);
+  --clr-highlight: hsl(209, 30%, 70%);
+
+  /* Regular color */
   --clr-white: #fff;
   --clr-black: #222;
-  --red-light: #fa7e88;
-  --red-dark: #842029;
-  --green-light: #adfcd8;
-  --green-dark: #0f5132;
-  --clr-highlight-1: #ff6b6b;
-  --clr-highlight-2: #ffc947;
-  /* For always dark footer */
-  --footer-dark-bg: var(--clr-primary-1);
-  --footer-dark-link: var(--clr-primary-10);
-  --footer-light-link: var(--clr-primary-8);
+  --clr-success: hsl(153, 93%, 83%);
+  --clr-warning: hsl(0, 100%, 71%);
+  --clr-danger: hsl(355, 61%, 32%);
+  --clr-info: hsl(153, 99%, 54%);
+
+  /* Derived variable */
+  --clr-surface: var(--clr-bg);
+
   /* fonts  */
-  --heading-font-1: "Spectral", serif;
-  --heading-font-2: "Roboto", sans-serif;
+  --heading-font-1: "Comic Relief", system-ui;
+  --heading-font-2: "Spectral", serif;
+  --heading-font-3: "Roboto", serif;
   --body-font: "Karla", sans-serif;
-  --icon-font:
-    cursive, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --small-text: 0.7em;
   /* rest of the vars  */
-  --background-color: var(--clr-grey-10);
-  --text-color: var(--clr-grey-1);
   --border-radius: 0.25rem;
   --letter-spacing: 0.25rem;
   --transition: all 0.3s ease-in-out;
   --max-width: 1172px;
   --fixed-width: 600px;
-  --shadow-light: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  --shadow-dark: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  --shadow-light: 2px 5px 12px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 4px 8px 20px rgba(0, 0, 0, 0.2);
   /* from tailwind  */
   --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.05);
   --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -84,50 +67,33 @@ html {
   --shadow-4:
     0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.05);
 }
-.theme-dark {
-  /* dark shades of primary color*/
-  --clr-primary-10: hsl(205, 86%, 17%);
-  --clr-primary-9: hsl(205, 77%, 27%);
-  --clr-primary-8: hsl(205, 72%, 37%);
-  --clr-primary-7: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-6: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-5: hsl(205, 89%, 70%);
-  --clr-primary-4: hsl(205, 90%, 76%);
-  --clr-primary-3: hsl(205, 86%, 81%);
-  --clr-primary-2: hsl(205, 90%, 88%);
-  --clr-primary-1: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-10: hsl(209, 61%, 16%);
-  --clr-grey-9: hsl(211, 39%, 23%);
-  --clr-grey-8: hsl(209, 34%, 30%);
-  --clr-grey-7: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-6: hsl(210, 22%, 49%);
-  --clr-grey-5: hsl(209, 23%, 60%);
-  --clr-grey-4: hsl(211, 27%, 70%);
-  --clr-grey-3: hsl(210, 31%, 80%);
-  --clr-grey-2: hsl(212, 33%, 89%);
-  --clr-grey-1: hsl(210, 36%, 96%);
-  --background-color: var(--clr-grey-10);
-  --text-color: var(--clr-grey-1);
-  /* For always dark footer */
-  --footer-dark-bg: var(--clr-primary-10);
-  --footer-dark-link: var(--clr-primary-1);
-  --footer-light-link: var(--clr-primary-3);
+.theme-light {
+  /* theme color */
+  --clr-bg-light: hsl(205, 100%, 98%);
+  --clr-bg: hsl(205, 100%, 95%);
+  --clr-bg-dark: hsl(203, 100%, 92%);
+  --clr-text: hsl(209, 61%, 16%);
+  --clr-text-muted: hsl(209, 34%, 30%);
+  --clr-primary: hsl(205, 100%, 25%);
+  --clr-primary-hover: hsl(205, 100%, 15%);
+  --clr-secondary: hsl(61, 98%, 50%);
+  --clr-secondary-hover: hsl(61, 98%, 40%);
+  --clr-border: hsl(209, 50%, 75%);
+  --clr-highlight: var(--clr-bg);
 }
 body {
-  background: var(--white);
+  background: var(--clr-bg-light);
   font-family: var(--heading-font-1);
   font-weight: 400;
   line-height: 1.75;
-  color: var(--clr-grey-1);
+  color: var(--clr-text);
 }
 
 p {
   margin-bottom: 1.5rem;
   max-width: 40em;
+  color: var(--clr-text-muted);
+  font-family: var(--body-font);
 }
 
 h1,
@@ -137,7 +103,7 @@ h4,
 h5 {
   margin: 0;
   margin-bottom: 1.38rem;
-  color: var(--clr-primary-1);
+  color: var(--clr-text);
   font-family: var(--heading-font-1);
   font-weight: 400;
   line-height: 1.3;
@@ -189,9 +155,10 @@ ul {
 /* buttons  */
 .btn {
   cursor: pointer;
-  color: var(--clr-primary-10);
   font-family: var(--heading-font-1);
-  background: var(--clr-primary-1);
+  background: var(--clr-primary);
+  color: var(--clr-bg-dark);
+  font-weight: normal;
   border: transparent;
   border-radius: var(--border-radius);
   letter-spacing: var(--letter-spacing);
@@ -202,64 +169,43 @@ ul {
   display: inline-block;
 }
 .btn:hover {
-  background: var(--clr-primary-3);
+  background: var(--clr-primary-hover);
   box-shadow: var(--shadow-3);
 }
 .btn-hipster {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-5);
+  color: var(--clr-text);
+  background: var(--clr-secondary);
 }
 .btn-hipster:hover {
-  background-color: var(--clr-primary-6);
+  background-color: var(--clr-secondary-hover);
 }
 .btn-block {
   width: 100%;
 }
-/*
-alerts
- */
-.alert {
-  padding: 0.375rem 0.75rem;
-  margin-bottom: 1rem;
-  border-color: transparent;
-  border-radius: var(--border-radius);
+/* loading spinner */
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--clr-border);
+  border-top-color: var(--clr-primary);
+  border-radius: 50%;
+  animation: spinner 0.6s linear infinite;
+  margin: 0 auto;
 }
-.alert-danger {
-  color: var(--red-dark);
-  background: var(--red-light);
-}
-.alert-success {
-  color: var(--green-dark);
-  background: var(--green-light);
-}
-/* show loading  */
 @keyframes spinner {
   to {
     transform: rotate(360deg);
   }
-}
-.loading {
-  width: 6rem;
-  height: 6rem;
-  border: 5px solid var(--clr-grey-7);
-  border-top-color: var(--clr-primary-4);
-  border-radius: 50%;
-  animation: spinner 0.6s linear infinite;
-  margin: 0 auto;
 }
 /* heading*/
 .title {
   text-align: center;
   margin-bottom: 4rem;
 }
-.title h1 {
-  /* margin-bottom: 0; */
-  color: var(--clr-primary-1);
-}
 .underline {
   width: 5rem;
   height: 0.25rem;
-  background: var(--clr-primary-5);
+  background: var(--clr-primary);
   margin: 0 auto;
   margin-top: -1.5rem;
 }
@@ -272,63 +218,4 @@ alerts
 }
 .section {
   padding-top: 3rem;
-}
-
-/* dark theme */
-.theme {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  position: absolute;
-  top: 6rem;
-  right: 1rem;
-  outline: 2px solid var(--clr-primary-2);
-  padding: 0 0.5rem;
-  border-radius: 1rem;
-}
-.theme-text {
-  text-transform: capitalize;
-  color: var(--clr-primary-2);
-}
-.theme-color {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.theme .light {
-  background: var(--clr-primary-5);
-}
-.theme .dark {
-  background: var(--clr-black);
-}
-.theme-light {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --background-color: var(--clr-grey-10);
-  --text-color: var(--clr-grey-1);
 }
