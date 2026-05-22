@@ -33,6 +33,7 @@ html {
   --clr-secondary-hover: hsl(61, 98%, 40%);
   --clr-border: hsl(209, 30%, 40%);
   --clr-highlight: hsl(209, 30%, 70%);
+  --clr-border-theme: hsl(209, 20%, 40%);
 
   /* Regular color */
   --clr-white: #fff;
@@ -80,6 +81,7 @@ html {
   --clr-secondary-hover: hsl(61, 98%, 40%);
   --clr-border: hsl(209, 50%, 75%);
   --clr-highlight: var(--clr-bg);
+  --clr-border-theme: var(--clr-bg);
 }
 body {
   background: var(--clr-bg-light);

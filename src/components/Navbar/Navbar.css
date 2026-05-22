@@ -91,6 +91,7 @@
   box-shadow: var(--shadow-light);
   z-index: 10;
   background: var(--clr-bg-light);
+  border-bottom: 1px solid var(--clr-border-theme);
 }
 .theme-btn {
   border-radius: 50%;
