@@ -30,23 +30,20 @@ const Projects = () => {
           </svg>
         </div>
       )}
-      <div className="title">
-        <h1>projects</h1>
-        <div className="underline"></div>
-      </div>
-
+      <h2 className="section-title">projects</h2>
       <div className="projects-center section-center">
         <div className="projects-code">
-          <h4>Find all my projects code on Github :</h4>
+          <p>Find all my projects code on Github</p>
           <a
             href="https://github.com/pradeep-jais"
             target="_blank"
             className="btn view-code-btn"
           >
-            Github
+            <i className="fa-brands fa-github"></i>
+            <span>Github</span>
           </a>
         </div>
-        <h2>Featured projects</h2>
+        <h3>Featured projects</h3>
         <div className="featured-projects projects-container">
           {featuredProjects.map((project) => {
             return <ProjectCard key={project.id} projectData={project} />;

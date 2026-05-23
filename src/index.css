@@ -27,13 +27,13 @@ html {
   --clr-bg-dark: hsl(205, 100%, 8%);
   --clr-text: hsl(209, 100%, 98%);
   --clr-text-muted: hsl(209, 30%, 70%);
-  --clr-primary: hsl(205, 100%, 70%);
-  --clr-primary-hover: hsl(205, 100%, 85%);
-  --clr-secondary: hsl(61, 98%, 50%);
-  --clr-secondary-hover: hsl(61, 98%, 40%);
+  --clr-primary: hsl(209, 100%, 55%);
+  --clr-primary-hover: hsl(209, 100%, 65%);
+  --clr-secondary: hsl(189, 94%, 43%);
+  --clr-secondary-hover: hsl(189, 94%, 53%);
   --clr-border: hsl(209, 30%, 40%);
+  --clr-border-hover: hsl(209, 30%, 60%);
   --clr-highlight: hsl(209, 30%, 70%);
-  --clr-border-theme: hsl(209, 20%, 40%);
 
   /* Regular color */
   --clr-white: #fff;
@@ -77,11 +77,11 @@ html {
   --clr-text-muted: hsl(209, 34%, 30%);
   --clr-primary: hsl(205, 100%, 25%);
   --clr-primary-hover: hsl(205, 100%, 15%);
-  --clr-secondary: hsl(61, 98%, 50%);
-  --clr-secondary-hover: hsl(61, 98%, 40%);
+  --clr-secondary: hsl(189, 94%, 43%);
+  --clr-secondary-hover: hsl(189, 94%, 53%);
   --clr-border: hsl(209, 50%, 75%);
+  --clr-border-hover: hsl(209, 50%, 75%);
   --clr-highlight: var(--clr-bg);
-  --clr-border-theme: var(--clr-bg);
 }
 body {
   background: var(--clr-bg-light);
@@ -159,7 +159,7 @@ ul {
   cursor: pointer;
   font-family: var(--heading-font-1);
   background: var(--clr-primary);
-  color: var(--clr-bg-dark);
+  color: var(--clr-bg);
   font-weight: normal;
   border: transparent;
   border-radius: var(--border-radius);
@@ -173,6 +173,7 @@ ul {
 .btn:hover {
   background: var(--clr-primary-hover);
   box-shadow: var(--shadow-3);
+  color: var(--clr-bg);
 }
 .btn-hipster {
   color: var(--clr-text);
@@ -200,6 +201,12 @@ ul {
   }
 }
 /* heading*/
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  text-decoration: underline 5px var(--clr-primary);
+  text-underline-offset: 0.45em;
+}
 .title {
   text-align: center;
   margin-bottom: 4rem;
