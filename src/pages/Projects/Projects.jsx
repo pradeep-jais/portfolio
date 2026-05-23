@@ -49,13 +49,11 @@ const Projects = () => {
             return <ProjectCard key={project.id} projectData={project} />;
           })}
         </div>
-        <h2>Basic Projects</h2>
-        <div className="scroll-wrapper">
-          <div className="basic-projects projects-container">
-            {basicProjects.map((project) => {
-              return <ProjectCard key={project.id} projectData={project} />;
-            })}
-          </div>
+        <h3>Basic Projects</h3>
+        <div className="basic-projects projects-container">
+          {basicProjects.map((project) => {
+            return <ProjectCard key={project.id} projectData={project} />;
+          })}
         </div>
         {location !== "/projects" && (
           <Link to="/projects" className="btn projects-btn">

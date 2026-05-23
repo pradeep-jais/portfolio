@@ -145,8 +145,6 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 1rem;
-  margin-bottom: 5rem;
 }
 .projects-container {
   display: grid;
@@ -165,20 +163,17 @@
     padding: 0;
   }
 }
-/* Making basic projects section slider */
-.scroll-wrapper {
-  padding: 0.5rem 0;
-  overflow: hidden;
-}
+/* Creating horizontal scroll for basic projects */
 .basic-projects {
-  display: flex;
-  /* overflow-x: auto; */
+  margin-bottom: 0;
+  padding: 1rem 0 3rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 20rem;
+  overflow-x: auto;
 }
-.basic-projects .project {
-  min-width: 25rem;
-}
-.basic-projects .project-img {
-  min-width: 23rem;
+.basic-projects::-webkit-scrollbar {
+  display: none;
 }
 .basic-projects .project-btn-container-flag {
   grid-template-columns: 1fr;
