@@ -6,27 +6,12 @@
 .about {
   position: relative;
 }
-.about .shape-fill {
+.about-wave .shape-fill {
   fill: var(--clr-bg);
-}
-.about-wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.about-wave svg {
-  position: relative;
-  display: block;
-  width: calc(129% + 1.3px);
-  height: 93px;
 }
 .about-title {
   display: inline-block;
-  margin: 1rem 0 2rem 0;
+  margin-bottom: 2rem;
   text-align: left;
 }
 .about-center {

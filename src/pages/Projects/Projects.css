@@ -6,9 +6,11 @@
 .projects {
   position: relative;
   background: var(--clr-bg);
-  padding: 3rem 1rem;
 }
-.projects .shape-fill {
+.projects-wave {
+  background-color: var(--clr-bg);
+}
+.projects-wave .shape-fill {
   fill: var(--clr-bg-dark);
 }
 .projects-code {
@@ -28,7 +30,7 @@
   letter-spacing: 0.2em;
 }
 .projects-center {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 .projects-center > h3 {
   margin-bottom: 1rem;
@@ -158,9 +160,6 @@
 @media screen and (min-width: 992px) {
   .projects-container:not(.basic-projects) {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  .projects-center {
-    padding: 0;
   }
 }
 /* Creating horizontal scroll for basic projects */

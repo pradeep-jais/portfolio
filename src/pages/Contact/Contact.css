@@ -5,9 +5,12 @@ contact
  */
 .contact {
   position: relative;
-  background: var(--clr-bg);
+  background: var(--clr-bg-dark);
 }
-.contact .shape-fill {
+.contact-wave {
+  background: var(--clr-bg-dark);
+}
+.contact-wave .shape-fill {
   fill: var(--clr-bg);
 }
 .contact-center {

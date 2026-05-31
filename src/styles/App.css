@@ -1,19 +1,12 @@
 .section-wave {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   overflow: hidden;
-  line-height: 0;
+  margin-bottom: -3rem;
 }
-
 .section-wave svg {
-  position: relative;
-  display: block;
-  width: calc(130% + 1.3px);
-  height: 93px;
+  width: 130%;
+  height: 100px;
 }
-
 .social-icons {
   display: flex;
   justify-content: space-between;
