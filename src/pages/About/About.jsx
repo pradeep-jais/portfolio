@@ -1,10 +1,166 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import PjaisDp from "../../assets/images/pjais-dp.jpg";
 
+const skills = {
+  Core: ["React", "TypeScript", "JavaScript", "Next.js"],
+  Styling: ["Tailwind CSS", "CSS3", "Figma", "shadcn/ui"],
+  Tooling: ["Vite", "Git", "Vercel", "Vitest"],
+};
+
+const services = [
+  { icon: "fa-solid fa-display", label: "Landing page & web design" },
+  { icon: "fa-solid fa-cubes", label: "Component library & design systems" },
+  { icon: "fa-solid fa-wand-magic-sparkles", label: "UI audits & refactors" },
+];
+
 const About = () => {
+  const [imgError, setImgError] = useState(false);
+
   return (
-    <section className="about">
+    <section className="section about" id="about">
+      {/* background glow orbs */}
+      <div className="about-orb about-orb--left" aria-hidden="true" />
+      <div className="about-orb about-orb--right" aria-hidden="true" />
+
+      <div className="section-center about-container">
+        <h2 className="section-title about-title">
+          About <span>Me</span>
+        </h2>
+
+        <div className="about-grid">
+          {/* ── LEFT COLUMN ── */}
+          <div className="about-left">
+            <div className="about-identity">
+              <div className="about-avatar-wrap">
+                {imgError ? (
+                  <span className="about-avatar-fallback">PJ</span>
+                ) : (
+                  <div class="about-avatar-img-wrap">
+                    <img
+                      src={PjaisDp}
+                      alt="Pradeep Jais"
+                      className="about-avatar-img"
+                      onError={() => setImgError(true)}
+                    />
+                  </div>
+                )}
+              </div>
+              <div className="about-name-block">
+                <h4 className="about-name">Pradeep Kumar</h4>
+                <p className="about-role">
+                  UI Developer &#8226; Frontend Web Developer
+                </p>
+                <div className="about-badges">
+                  <span className="badge badge--green">
+                    <span className="badge-dot" />
+                    Open to work
+                  </span>
+                  <span className="badge badge--blue">
+                    <i className="fa-solid fa-briefcase" aria-hidden="true" />
+                    Available for freelance
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <p className="about-bio">
+              I build <strong>clean, accessible interfaces</strong> that feel
+              fast and look intentional. With <strong>4+ years</strong> of
+              experience crafting UIs in React and TypeScript, I care about the
+              details — good component architecture, smooth interactions, and
+              code that my teammates actually enjoy reading.
+            </p>
+
+            {/* Divider */}
+            <div className="about-divider" />
+
+            {/* Education */}
+            <div className="about-edu">
+              <h4 className="about-micro-label">Education & Interests</h4>
+              <div class="about-edu-cards">
+                <div className="about-edu-card">
+                  <i
+                    className="fa-solid fa-graduation-cap about-edu-icon"
+                    aria-hidden="true"
+                  />
+                  <div>
+                    <p className="about-edu-work">
+                      B.Tech in Electronic & Communication
+                    </p>
+                    <p className="about-edu-uni">
+                      Guru Govind Singh Indraprasth University Delhi &nbsp;
+                      &#8226; &nbsp; 2021
+                    </p>
+                  </div>
+                </div>
+                <div className="about-edu-card">
+                  <i
+                    className="fa-solid fa-heart about-edu-icon"
+                    aria-hidden="true"
+                  />
+                  <div className="about-int-card">
+                    <p className="about-edu-work">Outside Work</p>
+                    <div className="about-pills">
+                      <span className="about-pill">photography</span>
+                      <span className="about-pill">Traveling</span>
+                      <span className="about-pill">Chess</span>
+                      <span className="about-pill">Cooking</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ── RIGHT COLUMN ── */}
+          <div className="about-right">
+            {/* Skills */}
+            <h4 className="about-micro-label">Tech Stack</h4>
+            {Object.entries(skills).map(([group, items]) => (
+              <div className="about-skill-group" key={group}>
+                <p className="about-skill-group-label">{group}</p>
+                <div className="about-pills">
+                  {items.map((s) => (
+                    <span className="about-pill" key={s}>
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            {/* Divider */}
+            <div className="about-divider" />
+
+            {/* Freelance services */}
+            <h4 className="about-micro-label">Freelance Services</h4>
+            <div className="about-services">
+              {services.map((service) => (
+                <div className="about-service-row" key={service.label}>
+                  <i
+                    className={`${service.icon} about-service-icon`}
+                    aria-hidden="true"
+                  />
+                  <span className="about-service-label">{service.label}</span>
+                </div>
+              ))}
+            </div>
+            <a href="#services" className="about-see-more">
+              See full services{" "}
+              <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+export default About;
+
+/*
+<section className="about">
       <div className="section-center about-center">
         <article className="about-img">
           <img src={PjaisDp} className="img about-photo" alt="pradeep" />
@@ -43,6 +199,4 @@ const About = () => {
         </article>
       </div>
     </section>
-  );
-};
-export default About;
+*/

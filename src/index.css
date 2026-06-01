@@ -31,7 +31,7 @@ html {
   --clr-primary-hover: hsl(209, 100%, 65%);
   --clr-secondary: hsl(189, 94%, 43%);
   --clr-secondary-hover: hsl(189, 94%, 53%);
-  --clr-border: hsl(209, 30%, 40%);
+  --clr-border: hsl(209, 50%, 25%);
   --clr-border-hover: hsl(209, 30%, 60%);
   --clr-highlight: hsl(209, 30%, 70%);
 
@@ -41,7 +41,7 @@ html {
   --clr-success: hsl(153, 93%, 83%);
   --clr-warning: hsl(0, 100%, 71%);
   --clr-danger: hsl(355, 61%, 32%);
-  --clr-info: hsl(153, 99%, 54%);
+  --clr-info: hsl(161, 99%, 54%);
 
   /* Derived variable */
   --clr-surface: var(--clr-bg);
@@ -54,6 +54,8 @@ html {
   --small-text: 0.7em;
   /* rest of the vars  */
   --border-radius: 0.25rem;
+  --radius-medium: 0.5rem;
+  --radius-large: 0.75rem;
   --letter-spacing: 0.25rem;
   --transition: all 0.3s ease-in-out;
   --max-width: 1172px;
@@ -77,15 +79,20 @@ html {
   --clr-text-muted: hsl(209, 34%, 30%);
   --clr-primary: hsl(205, 100%, 25%);
   --clr-primary-hover: hsl(205, 100%, 15%);
-  --clr-secondary: hsl(189, 94%, 43%);
-  --clr-secondary-hover: hsl(189, 94%, 53%);
+  --clr-secondary: hsl(189, 98%, 25%);
+  --clr-secondary-hover: hsl(189, 98%, 15%);
   --clr-border: hsl(209, 50%, 75%);
   --clr-border-hover: hsl(209, 50%, 75%);
   --clr-highlight: var(--clr-bg);
+
+  --clr-success: hsl(129, 96%, 24%);
+  --clr-warning: hsl(32, 100%, 30%);
+  --clr-danger: hsl(355, 100%, 24%);
+  --clr-info: hsl(161, 96%, 22%);
 }
 body {
   background: var(--clr-bg-light);
-  font-family: var(--heading-font-1);
+  font-family: var(--body-font);
   font-weight: 400;
   line-height: 1.75;
   color: var(--clr-text);
@@ -204,8 +211,8 @@ ul {
 .section-title {
   text-align: center;
   margin-bottom: 3rem;
-  text-decoration: underline 5px var(--clr-primary);
-  text-underline-offset: 0.45em;
+  text-decoration: underline 3px var(--clr-primary);
+  text-underline-offset: 0.35em;
 }
 .title {
   text-align: center;
@@ -226,5 +233,5 @@ ul {
   margin: 0 auto;
 }
 .section {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
