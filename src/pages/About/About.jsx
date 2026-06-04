@@ -4,15 +4,21 @@ import { useState } from "react";
 import PjaisDp from "../../assets/images/pjais-dp.jpg";
 
 const skills = {
-  Core: ["React", "TypeScript", "JavaScript", "Next.js"],
+  Core: ["React", "JavaScript", "HTML5", "Redux", "Firebase"],
   Styling: ["Tailwind CSS", "CSS3", "Figma", "shadcn/ui"],
-  Tooling: ["Vite", "Git", "Vercel", "Vitest"],
+  Tooling: ["Vite", "Git", "Github", "Vercel", "Netlify"],
 };
 
 const services = [
-  { icon: "fa-solid fa-display", label: "Landing page & web design" },
+  {
+    icon: "fa-solid fa-display",
+    label: "Landing page, business website & dashboard app",
+  },
   { icon: "fa-solid fa-cubes", label: "Component library & design systems" },
-  { icon: "fa-solid fa-wand-magic-sparkles", label: "UI audits & refactors" },
+  {
+    icon: "fa-solid fa-wand-magic-sparkles",
+    label: "UI audits, refactors & bug fixes",
+  },
 ];
 
 const About = () => {
@@ -37,7 +43,7 @@ const About = () => {
                 {imgError ? (
                   <span className="about-avatar-fallback">PJ</span>
                 ) : (
-                  <div class="about-avatar-img-wrap">
+                  <div className="about-avatar-img-wrap">
                     <img
                       src={PjaisDp}
                       alt="Pradeep Jais"
@@ -66,11 +72,12 @@ const About = () => {
             </div>
 
             <p className="about-bio">
-              I build <strong>clean, accessible interfaces</strong> that feel
-              fast and look intentional. With <strong>4+ years</strong> of
-              experience crafting UIs in React and TypeScript, I care about the
-              details — good component architecture, smooth interactions, and
-              code that my teammates actually enjoy reading.
+              I build <strong>clean, accessible, responsive interfaces</strong>{" "}
+              that feel fast and look intentional. With{" "}
+              <strong>2+ years</strong> of experience crafting UIs in{" "}
+              <strong>React and Tailwind CSS</strong>, I care about the details
+              — pixel-perfect design, good component architecture, smooth
+              interactions and code that people actually enjoy reading.
             </p>
 
             {/* Divider */}
@@ -79,7 +86,7 @@ const About = () => {
             {/* Education */}
             <div className="about-edu">
               <h4 className="about-micro-label">Education & Interests</h4>
-              <div class="about-edu-cards">
+              <div className="about-edu-cards">
                 <div className="about-edu-card">
                   <i
                     className="fa-solid fa-graduation-cap about-edu-icon"

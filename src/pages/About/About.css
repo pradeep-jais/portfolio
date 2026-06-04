@@ -15,21 +15,6 @@
   fill: var(--clr-bg);
 }
 
-.about {
-  --navy-deep: hsl(225, 50%, 8%);
-  --navy-mid: hsl(211, 53%, 11%);
-  --navy-card: hsl(215, 58%, 13%);
-  --navy-border: hsl(216, 51%, 21%);
-  --blue-vivid: hsl(210, 100%, 56%);
-  --blue-glow: hsl(206, 100%, 62%);
-  --blue-dim: hsl(212, 80%, 42%);
-  --text-primary: hsl(217, 100%, 95%);
-  --text-secondary: hsl(211, 36%, 62%);
-  --text-muted: hsl(209, 35%, 37%);
-  --green-badge: hsl(151, 100%, 45%);
-  --green-bg: hsla(151, 100%, 45%, 0.08);
-}
-
 /* ── Glow orbs ── */
 .about-orb {
   position: absolute;
