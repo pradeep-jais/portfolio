@@ -21,13 +21,13 @@
   align-items: center;
   gap: 3rem;
   height: 100%;
-  padding: 3rem 1rem;
 }
 .hero-info {
   align-self: center;
 }
 .hero-info h4 {
   color: var(--clr-text-muted);
+  font-family: var(--body-font);
 }
 .hero-icons {
   margin-inline: auto;

@@ -38,7 +38,7 @@ const Footer = () => {
         })}
       </ul>
       <p className="footer-text">
-        copyrights &copy; all rights reserved. Pradeep Kumar official portfolio
+        &copy; all rights reserved. <br /> Pradeep Kumar official portfolio
         <span className="date">
           {/* 2023 */}
           {new Date().getFullYear()}

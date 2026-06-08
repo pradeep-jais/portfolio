@@ -5,13 +5,13 @@
  */
 .projects {
   position: relative;
-  background: var(--clr-bg);
+  background: var(--clr-bg-dark);
 }
 .projects-wave {
-  background-color: var(--clr-bg);
+  background-color: var(--clr-bg-dark);
 }
 .projects-wave .shape-fill {
-  fill: var(--clr-bg-dark);
+  fill: var(--clr-bg);
 }
 .projects-code {
   display: flex;
@@ -28,9 +28,6 @@
   padding: 0.25rem 1rem;
   border-radius: var(--border-radius);
   letter-spacing: 0.2em;
-}
-.projects-center {
-  padding: 0 1rem;
 }
 .projects-center > h3 {
   margin-bottom: 1rem;
@@ -165,7 +162,7 @@
 /* Creating horizontal scroll for basic projects */
 .basic-projects {
   margin-bottom: 0;
-  padding: 1rem 0 3rem;
+  padding: 1rem 1rem 3rem;
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 20rem;

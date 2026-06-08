@@ -23,6 +23,7 @@ const Contact = () => {
             action="https://formspree.io/f/mjvdpgly"
             method="post"
             className="form"
+            autoComplete="true"
           >
             <div className="form-row">
               <label htmlFor="name" className="form-label">

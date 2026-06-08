@@ -7,13 +7,13 @@
   background: var(--clr-bg-dark);
   display: grid;
   place-content: center;
-  padding: 3rem 1rem;
   text-align: center;
   border-top: 1px solid var(--clr-border);
 }
 .footer-links {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
   justify-content: center;
   text-transform: capitalize;
   letter-spacing: var(--letter-spacing);
@@ -26,16 +26,17 @@
 .footer-link:hover {
   color: var(--clr-primary);
 }
-.footer-icons .social-icon {
-  color: var(--clr-primary);
-}
-.footer-icons .social-icon:hover {
-  color: var(--clr-primary-hover);
+.footer-icons {
+  margin-top: 2rem;
+  width: 100%;
 }
 .footer-text {
-  font-family: var(--body-font);
-  letter-spacing: 2px;
+  letter-spacing: 0.03em;
   text-transform: capitalize;
+  margin-top: 1rem;
+}
+.footer-text .date {
+  margin-left: 0.5rem;
 }
 @media screen and (min-width: 568px) {
   .footer-links {

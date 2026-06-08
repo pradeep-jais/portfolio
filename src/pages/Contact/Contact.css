@@ -5,27 +5,20 @@ contact
  */
 .contact {
   position: relative;
-  background: var(--clr-bg-dark);
+  background: var(--clr-bg);
 }
 .contact-wave {
-  background: var(--clr-bg-dark);
+  background: var(--clr-bg);
 }
 .contact-wave .shape-fill {
-  fill: var(--clr-bg);
+  fill: var(--clr-bg-dark);
 }
 .contact-center {
   display: grid;
   gap: 2rem;
-  padding-bottom: 3rem;
-}
-.contact-info {
-  padding: 0 1rem;
 }
 .contact-center h4 {
   margin-bottom: 0;
-}
-.contact-form {
-  padding: 1rem;
 }
 .form {
   max-width: var(--fixed-width);
@@ -53,7 +46,7 @@ contact
   padding: 0.375rem 0.75rem;
   border-radius: var(--border-radius);
   color: var(--clr-text);
-  background: var(--clr-white);
+  background: var(--clr-bg-light);
   border: 1px solid var(--clr-border);
   font-family: var(--body-font);
   box-shadow: var(--shadow-light);
@@ -70,7 +63,6 @@ contact
 }
 @media screen and (min-width: 678px) {
   .contact-center {
-    padding: 0 2rem 3rem 2rem;
     justify-content: center;
     align-items: center;
   }

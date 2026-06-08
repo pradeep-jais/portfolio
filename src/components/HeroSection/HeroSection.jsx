@@ -6,7 +6,7 @@ import SocialLink from "../ui/SocialILink";
 
 const HeroSection = () => {
   return (
-    <section className="hero">
+    <section className="hero section">
       <div className="section-center hero-center">
         <article className="hero-info">
           <div className="hero-title">

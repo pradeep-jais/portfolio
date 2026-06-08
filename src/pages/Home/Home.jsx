@@ -12,6 +12,7 @@ const Home = () => {
       <HeroSection />
       <SectionWave className="about-wave" />
       <About />
+      <SectionWave className="skills-wave" />
       <SkillsSection />
       <SectionWave className="projects-wave" />
       <Projects />
