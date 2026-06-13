@@ -22,6 +22,7 @@ html {
 
 :root {
   /* theme color - default: dark*/
+  --clr-bg-lightest: hsl(205, 100%, 15%);
   --clr-bg-light: hsl(205, 100%, 12%);
   --clr-bg: hsl(205, 100%, 10%);
   --clr-bg-dark: hsl(205, 100%, 8%);
@@ -73,8 +74,9 @@ html {
 }
 .theme-light {
   /* theme color */
-  --clr-bg-light: hsl(205, 100%, 98%);
-  --clr-bg: hsl(205, 100%, 95%);
+  --clr-bg-lightest: hsl(205, 100%, 99%);
+  --clr-bg-light: hsl(205, 100%, 96%);
+  --clr-bg: hsl(205, 100%, 94%);
   --clr-bg-dark: hsl(203, 100%, 92%);
   --clr-text: hsl(209, 61%, 16%);
   --clr-text-muted: hsl(209, 34%, 30%);
