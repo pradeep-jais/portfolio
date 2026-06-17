@@ -54,11 +54,32 @@ const Contact = () => {
       setErrors(err);
       return;
     }
-    setStatus("sending");
 
     // Simulate API call — replace with your implementation - actual form handler (Formspree, EmailJS, etc.)
-    await new Promise((r) => setTimeout(r, 1500));
-    setStatus("sent");
+    const newFormData = {
+      ...form,
+      access_key: import.meta.env.VITE_WEB3FORM_API,
+      inquiryType,
+    };
+
+    try {
+      setStatus("sending");
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "post",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newFormData),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setStatus("sent");
+      } else {
+        throw new Error(data.message);
+      }
+    } catch (error) {
+      console.log(error);
+      setStatus("error");
+    }
   };
 
   const handleCopy = async () => {
