@@ -32,6 +32,11 @@ const Contact = () => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: "" }));
+
+    // reset prev form submission error
+    if (status === "error") {
+      setStatus("idle");
+    }
   };
 
   const validate = () => {
@@ -58,8 +63,9 @@ const Contact = () => {
     // Simulate API call — replace with your implementation - actual form handler (Formspree, EmailJS, etc.)
     const newFormData = {
       ...form,
-      access_key: import.meta.env.VITE_WEB3FORM_API,
       inquiryType,
+      subject: `New form submission at portfolio regarding - ${inquiryType}`,
+      access_key: import.meta.env.VITE_WEB3FORM_API,
     };
 
     try {
@@ -322,6 +328,17 @@ const Contact = () => {
                   </span>
                 )}
               </div>
+
+              {/* Form submission error */}
+              {status === "error" && (
+                <span className="form-error">
+                  <i
+                    className="fa-solid fa-triangle-exclamation"
+                    aria-hidden="true"
+                  />
+                  Something went wrong! please try again later.
+                </span>
+              )}
 
               {/* Submit */}
               <button
